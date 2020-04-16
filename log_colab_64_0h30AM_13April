@@ -1,0 +1,1313 @@
+[2020/04/12 17:23:35 __main__ INFO] - {
+  "model_config": {
+    "arch": "resnext",
+    "depth": 29,
+    "base_channels": 64,
+    "cardinality": 8,
+    "input_shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "n_classes": 10
+  },
+  "optim_config": {
+    "epochs": 300,
+    "batch_size": 128,
+    "base_lr": 0.05,
+    "weight_decay": 0.0005,
+    "momentum": 0.9,
+    "nesterov": true,
+    "milestones": [
+      150,
+      225
+    ],
+    "lr_decay": 0.1
+  },
+  "data_config": {
+    "dataset": "CIFAR10"
+  },
+  "run_config": {
+    "seed": 10,
+    "outdir": "../drive/My Drive/result_resNext2",
+    "num_workers": 7,
+    "tensorboard": false
+  }
+}
+Files already downloaded and verified
+Files already downloaded and verified
+[2020/04/12 17:23:41 __main__ INFO] - n_params: 34426698
+/usr/local/lib/python3.6/dist-packages/torch/nn/_reduction.py:43: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+[2020/04/12 17:23:41 __main__ INFO] - Test 0
+[2020/04/12 17:23:58 __main__ INFO] - Epoch 0 Loss 2.3037 Accuracy 0.1000
+[2020/04/12 17:23:58 __main__ INFO] - Elapsed 16.88
+/usr/local/lib/python3.6/dist-packages/torch/optim/lr_scheduler.py:122: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+[2020/04/12 17:23:58 __main__ INFO] - Train 1
+[2020/04/12 17:24:01 __main__ INFO] - Epoch 1 Step 0/390 Loss 2.3944 (2.3944) Accuracy 0.1094 (0.1094)
+[2020/04/12 17:25:02 __main__ INFO] - Epoch 1 Step 100/390 Loss 1.9120 (3.2664) Accuracy 0.2266 (0.1279)
+[2020/04/12 17:26:03 __main__ INFO] - Epoch 1 Step 200/390 Loss 1.9187 (2.5697) Accuracy 0.3125 (0.1998)
+[2020/04/12 17:27:03 __main__ INFO] - Epoch 1 Step 300/390 Loss 1.5599 (2.2756) Accuracy 0.4297 (0.2511)
+[2020/04/12 17:27:57 __main__ INFO] - Elapsed 239.69
+[2020/04/12 17:27:57 __main__ INFO] - Test 1
+[2020/04/12 17:28:12 __main__ INFO] - Epoch 1 Loss 1.5079 Accuracy 0.4520
+[2020/04/12 17:28:12 __main__ INFO] - Elapsed 14.83
+[2020/04/12 17:28:13 __main__ INFO] - Train 2
+[2020/04/12 17:28:14 __main__ INFO] - Epoch 2 Step 0/390 Loss 1.4203 (1.4203) Accuracy 0.4922 (0.4922)
+[2020/04/12 17:29:15 __main__ INFO] - Epoch 2 Step 100/390 Loss 1.4879 (1.3959) Accuracy 0.4219 (0.4842)
+[2020/04/12 17:30:15 __main__ INFO] - Epoch 2 Step 200/390 Loss 1.4629 (1.3405) Accuracy 0.4844 (0.5067)
+[2020/04/12 17:31:16 __main__ INFO] - Epoch 2 Step 300/390 Loss 1.0695 (1.2882) Accuracy 0.6875 (0.5293)
+[2020/04/12 17:32:10 __main__ INFO] - Elapsed 236.94
+[2020/04/12 17:32:10 __main__ INFO] - Test 2
+[2020/04/12 17:32:25 __main__ INFO] - Epoch 2 Loss 1.0781 Accuracy 0.6247
+[2020/04/12 17:32:25 __main__ INFO] - Elapsed 14.86
+[2020/04/12 17:32:26 __main__ INFO] - Train 3
+[2020/04/12 17:32:26 __main__ INFO] - Epoch 3 Step 0/390 Loss 1.2048 (1.2048) Accuracy 0.5781 (0.5781)
+[2020/04/12 17:33:27 __main__ INFO] - Epoch 3 Step 100/390 Loss 0.8853 (0.9805) Accuracy 0.7031 (0.6536)
+[2020/04/12 17:34:28 __main__ INFO] - Epoch 3 Step 200/390 Loss 0.9284 (0.9572) Accuracy 0.6875 (0.6613)
+[2020/04/12 17:35:28 __main__ INFO] - Epoch 3 Step 300/390 Loss 0.9356 (0.9296) Accuracy 0.6719 (0.6707)
+[2020/04/12 17:36:23 __main__ INFO] - Elapsed 236.98
+[2020/04/12 17:36:23 __main__ INFO] - Test 3
+[2020/04/12 17:36:37 __main__ INFO] - Epoch 3 Loss 0.8271 Accuracy 0.7093
+[2020/04/12 17:36:37 __main__ INFO] - Elapsed 14.87
+[2020/04/12 17:36:38 __main__ INFO] - Train 4
+[2020/04/12 17:36:39 __main__ INFO] - Epoch 4 Step 0/390 Loss 0.8149 (0.8149) Accuracy 0.7422 (0.7422)
+[2020/04/12 17:37:40 __main__ INFO] - Epoch 4 Step 100/390 Loss 0.7451 (0.7727) Accuracy 0.7500 (0.7249)
+[2020/04/12 17:38:41 __main__ INFO] - Epoch 4 Step 200/390 Loss 0.6260 (0.7552) Accuracy 0.7422 (0.7322)
+[2020/04/12 17:39:41 __main__ INFO] - Epoch 4 Step 300/390 Loss 0.7875 (0.7421) Accuracy 0.7109 (0.7386)
+[2020/04/12 17:40:35 __main__ INFO] - Elapsed 237.10
+[2020/04/12 17:40:35 __main__ INFO] - Test 4
+[2020/04/12 17:40:50 __main__ INFO] - Epoch 4 Loss 0.7806 Accuracy 0.7353
+[2020/04/12 17:40:50 __main__ INFO] - Elapsed 14.82
+[2020/04/12 17:40:51 __main__ INFO] - Train 5
+[2020/04/12 17:40:52 __main__ INFO] - Epoch 5 Step 0/390 Loss 0.6650 (0.6650) Accuracy 0.7422 (0.7422)
+[2020/04/12 17:41:53 __main__ INFO] - Epoch 5 Step 100/390 Loss 0.5574 (0.6215) Accuracy 0.8047 (0.7846)
+[2020/04/12 17:42:53 __main__ INFO] - Epoch 5 Step 200/390 Loss 0.4398 (0.6161) Accuracy 0.8359 (0.7863)
+[2020/04/12 17:43:54 __main__ INFO] - Epoch 5 Step 300/390 Loss 0.4774 (0.6034) Accuracy 0.8438 (0.7906)
+[2020/04/12 17:44:48 __main__ INFO] - Elapsed 237.21
+[2020/04/12 17:44:48 __main__ INFO] - Test 5
+[2020/04/12 17:45:03 __main__ INFO] - Epoch 5 Loss 0.7105 Accuracy 0.7672
+[2020/04/12 17:45:03 __main__ INFO] - Elapsed 14.81
+[2020/04/12 17:45:04 __main__ INFO] - Train 6
+[2020/04/12 17:45:05 __main__ INFO] - Epoch 6 Step 0/390 Loss 0.5654 (0.5654) Accuracy 0.8047 (0.8047)
+[2020/04/12 17:46:06 __main__ INFO] - Epoch 6 Step 100/390 Loss 0.4998 (0.5294) Accuracy 0.8359 (0.8160)
+[2020/04/12 17:47:06 __main__ INFO] - Epoch 6 Step 200/390 Loss 0.6046 (0.5254) Accuracy 0.7969 (0.8183)
+[2020/04/12 17:48:07 __main__ INFO] - Epoch 6 Step 300/390 Loss 0.5821 (0.5218) Accuracy 0.8047 (0.8195)
+[2020/04/12 17:49:01 __main__ INFO] - Elapsed 237.20
+[2020/04/12 17:49:01 __main__ INFO] - Test 6
+[2020/04/12 17:49:16 __main__ INFO] - Epoch 6 Loss 0.6036 Accuracy 0.7993
+[2020/04/12 17:49:16 __main__ INFO] - Elapsed 14.86
+[2020/04/12 17:49:17 __main__ INFO] - Train 7
+[2020/04/12 17:49:18 __main__ INFO] - Epoch 7 Step 0/390 Loss 0.4717 (0.4717) Accuracy 0.8203 (0.8203)
+[2020/04/12 17:50:19 __main__ INFO] - Epoch 7 Step 100/390 Loss 0.5316 (0.4660) Accuracy 0.7891 (0.8377)
+[2020/04/12 17:51:19 __main__ INFO] - Epoch 7 Step 200/390 Loss 0.4525 (0.4701) Accuracy 0.8516 (0.8361)
+[2020/04/12 17:52:20 __main__ INFO] - Epoch 7 Step 300/390 Loss 0.5151 (0.4714) Accuracy 0.8359 (0.8365)
+[2020/04/12 17:53:14 __main__ INFO] - Elapsed 237.17
+[2020/04/12 17:53:14 __main__ INFO] - Test 7
+[2020/04/12 17:53:29 __main__ INFO] - Epoch 7 Loss 0.6800 Accuracy 0.7759
+[2020/04/12 17:53:29 __main__ INFO] - Elapsed 14.91
+[2020/04/12 17:53:30 __main__ INFO] - Train 8
+[2020/04/12 17:53:31 __main__ INFO] - Epoch 8 Step 0/390 Loss 0.4584 (0.4584) Accuracy 0.8359 (0.8359)
+[2020/04/12 17:54:32 __main__ INFO] - Epoch 8 Step 100/390 Loss 0.3696 (0.4258) Accuracy 0.8359 (0.8533)
+[2020/04/12 17:55:32 __main__ INFO] - Epoch 8 Step 200/390 Loss 0.2344 (0.4213) Accuracy 0.9297 (0.8541)
+[2020/04/12 17:56:33 __main__ INFO] - Epoch 8 Step 300/390 Loss 0.4804 (0.4231) Accuracy 0.8359 (0.8534)
+[2020/04/12 17:57:27 __main__ INFO] - Elapsed 237.18
+[2020/04/12 17:57:27 __main__ INFO] - Test 8
+[2020/04/12 17:57:42 __main__ INFO] - Epoch 8 Loss 0.5026 Accuracy 0.8291
+[2020/04/12 17:57:42 __main__ INFO] - Elapsed 14.80
+[2020/04/12 17:57:43 __main__ INFO] - Train 9
+[2020/04/12 17:57:44 __main__ INFO] - Epoch 9 Step 0/390 Loss 0.3158 (0.3158) Accuracy 0.8984 (0.8984)
+[2020/04/12 17:58:44 __main__ INFO] - Epoch 9 Step 100/390 Loss 0.3813 (0.3990) Accuracy 0.8516 (0.8620)
+[2020/04/12 17:59:45 __main__ INFO] - Epoch 9 Step 200/390 Loss 0.3820 (0.3977) Accuracy 0.8906 (0.8616)
+[2020/04/12 18:00:46 __main__ INFO] - Epoch 9 Step 300/390 Loss 0.4126 (0.3927) Accuracy 0.8750 (0.8638)
+[2020/04/12 18:01:40 __main__ INFO] - Elapsed 237.03
+[2020/04/12 18:01:40 __main__ INFO] - Test 9
+[2020/04/12 18:01:55 __main__ INFO] - Epoch 9 Loss 0.4804 Accuracy 0.8424
+[2020/04/12 18:01:55 __main__ INFO] - Elapsed 14.81
+[2020/04/12 18:01:55 __main__ INFO] - Train 10
+[2020/04/12 18:01:56 __main__ INFO] - Epoch 10 Step 0/390 Loss 0.3545 (0.3545) Accuracy 0.8828 (0.8828)
+[2020/04/12 18:02:57 __main__ INFO] - Epoch 10 Step 100/390 Loss 0.3069 (0.3522) Accuracy 0.8672 (0.8775)
+[2020/04/12 18:03:58 __main__ INFO] - Epoch 10 Step 200/390 Loss 0.3381 (0.3625) Accuracy 0.8984 (0.8753)
+[2020/04/12 18:04:58 __main__ INFO] - Epoch 10 Step 300/390 Loss 0.3828 (0.3673) Accuracy 0.8594 (0.8737)
+[2020/04/12 18:05:52 __main__ INFO] - Elapsed 237.04
+[2020/04/12 18:05:52 __main__ INFO] - Test 10
+[2020/04/12 18:06:07 __main__ INFO] - Epoch 10 Loss 0.4567 Accuracy 0.8505
+[2020/04/12 18:06:07 __main__ INFO] - Elapsed 14.84
+[2020/04/12 18:06:08 __main__ INFO] - Train 11
+[2020/04/12 18:06:09 __main__ INFO] - Epoch 11 Step 0/390 Loss 0.3574 (0.3574) Accuracy 0.8984 (0.8984)
+[2020/04/12 18:07:10 __main__ INFO] - Epoch 11 Step 100/390 Loss 0.3788 (0.3291) Accuracy 0.8594 (0.8855)
+[2020/04/12 18:08:10 __main__ INFO] - Epoch 11 Step 200/390 Loss 0.3432 (0.3349) Accuracy 0.8438 (0.8842)
+[2020/04/12 18:09:11 __main__ INFO] - Epoch 11 Step 300/390 Loss 0.3402 (0.3398) Accuracy 0.8750 (0.8828)
+[2020/04/12 18:10:05 __main__ INFO] - Elapsed 237.09
+[2020/04/12 18:10:05 __main__ INFO] - Test 11
+[2020/04/12 18:10:20 __main__ INFO] - Epoch 11 Loss 0.5110 Accuracy 0.8289
+[2020/04/12 18:10:20 __main__ INFO] - Elapsed 14.83
+[2020/04/12 18:10:21 __main__ INFO] - Train 12
+[2020/04/12 18:10:22 __main__ INFO] - Epoch 12 Step 0/390 Loss 0.2199 (0.2199) Accuracy 0.9375 (0.9375)
+[2020/04/12 18:11:23 __main__ INFO] - Epoch 12 Step 100/390 Loss 0.2168 (0.3211) Accuracy 0.9375 (0.8900)
+[2020/04/12 18:12:23 __main__ INFO] - Epoch 12 Step 200/390 Loss 0.2804 (0.3163) Accuracy 0.9141 (0.8915)
+[2020/04/12 18:13:24 __main__ INFO] - Epoch 12 Step 300/390 Loss 0.3645 (0.3210) Accuracy 0.8672 (0.8910)
+[2020/04/12 18:14:18 __main__ INFO] - Elapsed 237.15
+[2020/04/12 18:14:18 __main__ INFO] - Test 12
+[2020/04/12 18:14:33 __main__ INFO] - Epoch 12 Loss 0.4434 Accuracy 0.8521
+[2020/04/12 18:14:33 __main__ INFO] - Elapsed 14.95
+[2020/04/12 18:14:34 __main__ INFO] - Train 13
+[2020/04/12 18:14:35 __main__ INFO] - Epoch 13 Step 0/390 Loss 0.4931 (0.4931) Accuracy 0.8359 (0.8359)
+[2020/04/12 18:15:35 __main__ INFO] - Epoch 13 Step 100/390 Loss 0.4019 (0.3049) Accuracy 0.8750 (0.8923)
+[2020/04/12 18:16:36 __main__ INFO] - Epoch 13 Step 200/390 Loss 0.3060 (0.3036) Accuracy 0.8984 (0.8939)
+[2020/04/12 18:17:37 __main__ INFO] - Epoch 13 Step 300/390 Loss 0.4174 (0.3080) Accuracy 0.8594 (0.8938)
+[2020/04/12 18:18:31 __main__ INFO] - Elapsed 237.09
+[2020/04/12 18:18:31 __main__ INFO] - Test 13
+[2020/04/12 18:18:46 __main__ INFO] - Epoch 13 Loss 0.6222 Accuracy 0.7968
+[2020/04/12 18:18:46 __main__ INFO] - Elapsed 14.89
+[2020/04/12 18:18:47 __main__ INFO] - Train 14
+[2020/04/12 18:18:48 __main__ INFO] - Epoch 14 Step 0/390 Loss 0.1975 (0.1975) Accuracy 0.9531 (0.9531)
+[2020/04/12 18:19:48 __main__ INFO] - Epoch 14 Step 100/390 Loss 0.2849 (0.2936) Accuracy 0.8906 (0.8983)
+[2020/04/12 18:20:49 __main__ INFO] - Epoch 14 Step 200/390 Loss 0.4196 (0.2966) Accuracy 0.8906 (0.8970)
+[2020/04/12 18:21:50 __main__ INFO] - Epoch 14 Step 300/390 Loss 0.3250 (0.2945) Accuracy 0.8906 (0.8978)
+[2020/04/12 18:22:44 __main__ INFO] - Elapsed 237.04
+[2020/04/12 18:22:44 __main__ INFO] - Test 14
+[2020/04/12 18:22:59 __main__ INFO] - Epoch 14 Loss 0.4748 Accuracy 0.8408
+[2020/04/12 18:22:59 __main__ INFO] - Elapsed 14.82
+[2020/04/12 18:23:00 __main__ INFO] - Train 15
+[2020/04/12 18:23:01 __main__ INFO] - Epoch 15 Step 0/390 Loss 0.2498 (0.2498) Accuracy 0.8906 (0.8906)
+[2020/04/12 18:24:01 __main__ INFO] - Epoch 15 Step 100/390 Loss 0.2416 (0.2792) Accuracy 0.9141 (0.9031)
+[2020/04/12 18:25:02 __main__ INFO] - Epoch 15 Step 200/390 Loss 0.3889 (0.2832) Accuracy 0.8438 (0.9015)
+[2020/04/12 18:26:03 __main__ INFO] - Epoch 15 Step 300/390 Loss 0.2942 (0.2900) Accuracy 0.8906 (0.9001)
+[2020/04/12 18:26:57 __main__ INFO] - Elapsed 237.14
+[2020/04/12 18:26:57 __main__ INFO] - Test 15
+[2020/04/12 18:27:12 __main__ INFO] - Epoch 15 Loss 0.4398 Accuracy 0.8552
+[2020/04/12 18:27:12 __main__ INFO] - Elapsed 14.85
+[2020/04/12 18:27:13 __main__ INFO] - Train 16
+[2020/04/12 18:27:14 __main__ INFO] - Epoch 16 Step 0/390 Loss 0.3417 (0.3417) Accuracy 0.8750 (0.8750)
+[2020/04/12 18:28:14 __main__ INFO] - Epoch 16 Step 100/390 Loss 0.1968 (0.2641) Accuracy 0.9453 (0.9095)
+[2020/04/12 18:29:15 __main__ INFO] - Epoch 16 Step 200/390 Loss 0.2684 (0.2757) Accuracy 0.8984 (0.9065)
+[2020/04/12 18:30:16 __main__ INFO] - Epoch 16 Step 300/390 Loss 0.2095 (0.2775) Accuracy 0.9375 (0.9053)
+[2020/04/12 18:31:10 __main__ INFO] - Elapsed 237.15
+[2020/04/12 18:31:10 __main__ INFO] - Test 16
+[2020/04/12 18:31:25 __main__ INFO] - Epoch 16 Loss 0.4546 Accuracy 0.8507
+[2020/04/12 18:31:25 __main__ INFO] - Elapsed 14.83
+[2020/04/12 18:31:25 __main__ INFO] - Train 17
+[2020/04/12 18:31:26 __main__ INFO] - Epoch 17 Step 0/390 Loss 0.2215 (0.2215) Accuracy 0.9297 (0.9297)
+[2020/04/12 18:32:27 __main__ INFO] - Epoch 17 Step 100/390 Loss 0.2697 (0.2610) Accuracy 0.9062 (0.9100)
+[2020/04/12 18:33:28 __main__ INFO] - Epoch 17 Step 200/390 Loss 0.3287 (0.2651) Accuracy 0.9219 (0.9086)
+[2020/04/12 18:34:28 __main__ INFO] - Epoch 17 Step 300/390 Loss 0.2798 (0.2743) Accuracy 0.9062 (0.9054)
+[2020/04/12 18:35:22 __main__ INFO] - Elapsed 237.11
+[2020/04/12 18:35:22 __main__ INFO] - Test 17
+[2020/04/12 18:35:37 __main__ INFO] - Epoch 17 Loss 0.3943 Accuracy 0.8693
+[2020/04/12 18:35:37 __main__ INFO] - Elapsed 14.85
+[2020/04/12 18:35:38 __main__ INFO] - Train 18
+[2020/04/12 18:35:39 __main__ INFO] - Epoch 18 Step 0/390 Loss 0.2549 (0.2549) Accuracy 0.8984 (0.8984)
+[2020/04/12 18:36:40 __main__ INFO] - Epoch 18 Step 100/390 Loss 0.2403 (0.2560) Accuracy 0.9219 (0.9128)
+[2020/04/12 18:37:41 __main__ INFO] - Epoch 18 Step 200/390 Loss 0.1982 (0.2587) Accuracy 0.9375 (0.9125)
+[2020/04/12 18:38:41 __main__ INFO] - Epoch 18 Step 300/390 Loss 0.3629 (0.2632) Accuracy 0.8516 (0.9107)
+[2020/04/12 18:39:35 __main__ INFO] - Elapsed 237.11
+[2020/04/12 18:39:35 __main__ INFO] - Test 18
+[2020/04/12 18:39:50 __main__ INFO] - Epoch 18 Loss 0.4798 Accuracy 0.8463
+[2020/04/12 18:39:50 __main__ INFO] - Elapsed 14.83
+[2020/04/12 18:39:51 __main__ INFO] - Train 19
+[2020/04/12 18:39:52 __main__ INFO] - Epoch 19 Step 0/390 Loss 0.2422 (0.2422) Accuracy 0.9141 (0.9141)
+[2020/04/12 18:40:53 __main__ INFO] - Epoch 19 Step 100/390 Loss 0.3127 (0.2329) Accuracy 0.8984 (0.9213)
+[2020/04/12 18:41:53 __main__ INFO] - Epoch 19 Step 200/390 Loss 0.1562 (0.2487) Accuracy 0.9375 (0.9156)
+[2020/04/12 18:42:54 __main__ INFO] - Epoch 19 Step 300/390 Loss 0.2662 (0.2519) Accuracy 0.9062 (0.9136)
+[2020/04/12 18:43:48 __main__ INFO] - Elapsed 237.09
+[2020/04/12 18:43:48 __main__ INFO] - Test 19
+[2020/04/12 18:44:03 __main__ INFO] - Epoch 19 Loss 0.4116 Accuracy 0.8660
+[2020/04/12 18:44:03 __main__ INFO] - Elapsed 14.92
+[2020/04/12 18:44:04 __main__ INFO] - Train 20
+[2020/04/12 18:44:05 __main__ INFO] - Epoch 20 Step 0/390 Loss 0.2375 (0.2375) Accuracy 0.9062 (0.9062)
+[2020/04/12 18:45:05 __main__ INFO] - Epoch 20 Step 100/390 Loss 0.2232 (0.2309) Accuracy 0.9297 (0.9186)
+[2020/04/12 18:46:06 __main__ INFO] - Epoch 20 Step 200/390 Loss 0.1950 (0.2453) Accuracy 0.9219 (0.9141)
+[2020/04/12 18:47:07 __main__ INFO] - Epoch 20 Step 300/390 Loss 0.3003 (0.2474) Accuracy 0.9062 (0.9137)
+[2020/04/12 18:48:01 __main__ INFO] - Elapsed 236.96
+[2020/04/12 18:48:01 __main__ INFO] - Test 20
+[2020/04/12 18:48:16 __main__ INFO] - Epoch 20 Loss 0.4778 Accuracy 0.8385
+[2020/04/12 18:48:16 __main__ INFO] - Elapsed 14.83
+[2020/04/12 18:48:17 __main__ INFO] - Train 21
+[2020/04/12 18:48:17 __main__ INFO] - Epoch 21 Step 0/390 Loss 0.2283 (0.2283) Accuracy 0.9375 (0.9375)
+[2020/04/12 18:49:18 __main__ INFO] - Epoch 21 Step 100/390 Loss 0.2477 (0.2274) Accuracy 0.9062 (0.9226)
+[2020/04/12 18:50:19 __main__ INFO] - Epoch 21 Step 200/390 Loss 0.2295 (0.2416) Accuracy 0.9453 (0.9177)
+[2020/04/12 18:51:20 __main__ INFO] - Epoch 21 Step 300/390 Loss 0.2496 (0.2504) Accuracy 0.8984 (0.9141)
+[2020/04/12 18:52:14 __main__ INFO] - Elapsed 237.06
+[2020/04/12 18:52:14 __main__ INFO] - Test 21
+[2020/04/12 18:52:29 __main__ INFO] - Epoch 21 Loss 0.3825 Accuracy 0.8714
+[2020/04/12 18:52:29 __main__ INFO] - Elapsed 14.92
+[2020/04/12 18:52:29 __main__ INFO] - Train 22
+[2020/04/12 18:52:30 __main__ INFO] - Epoch 22 Step 0/390 Loss 0.1922 (0.1922) Accuracy 0.9297 (0.9297)
+[2020/04/12 18:53:31 __main__ INFO] - Epoch 22 Step 100/390 Loss 0.1679 (0.2284) Accuracy 0.9453 (0.9197)
+[2020/04/12 18:54:32 __main__ INFO] - Epoch 22 Step 200/390 Loss 0.2218 (0.2312) Accuracy 0.9219 (0.9188)
+[2020/04/12 18:55:32 __main__ INFO] - Epoch 22 Step 300/390 Loss 0.2708 (0.2397) Accuracy 0.8906 (0.9169)
+[2020/04/12 18:56:27 __main__ INFO] - Elapsed 237.13
+[2020/04/12 18:56:27 __main__ INFO] - Test 22
+[2020/04/12 18:56:41 __main__ INFO] - Epoch 22 Loss 0.4349 Accuracy 0.8564
+[2020/04/12 18:56:41 __main__ INFO] - Elapsed 14.82
+[2020/04/12 18:56:42 __main__ INFO] - Train 23
+[2020/04/12 18:56:43 __main__ INFO] - Epoch 23 Step 0/390 Loss 0.2587 (0.2587) Accuracy 0.8906 (0.8906)
+[2020/04/12 18:57:44 __main__ INFO] - Epoch 23 Step 100/390 Loss 0.2437 (0.2215) Accuracy 0.9297 (0.9241)
+[2020/04/12 18:58:45 __main__ INFO] - Epoch 23 Step 200/390 Loss 0.2925 (0.2320) Accuracy 0.9219 (0.9197)
+[2020/04/12 18:59:45 __main__ INFO] - Epoch 23 Step 300/390 Loss 0.2476 (0.2351) Accuracy 0.8984 (0.9185)
+[2020/04/12 19:00:39 __main__ INFO] - Elapsed 237.12
+[2020/04/12 19:00:39 __main__ INFO] - Test 23
+[2020/04/12 19:00:54 __main__ INFO] - Epoch 23 Loss 0.3716 Accuracy 0.8768
+[2020/04/12 19:00:54 __main__ INFO] - Elapsed 14.85
+[2020/04/12 19:00:55 __main__ INFO] - Train 24
+[2020/04/12 19:00:56 __main__ INFO] - Epoch 24 Step 0/390 Loss 0.2225 (0.2225) Accuracy 0.9219 (0.9219)
+[2020/04/12 19:01:57 __main__ INFO] - Epoch 24 Step 100/390 Loss 0.2778 (0.2237) Accuracy 0.8984 (0.9228)
+[2020/04/12 19:02:57 __main__ INFO] - Epoch 24 Step 200/390 Loss 0.2370 (0.2367) Accuracy 0.9297 (0.9182)
+[2020/04/12 19:03:58 __main__ INFO] - Epoch 24 Step 300/390 Loss 0.2374 (0.2363) Accuracy 0.9219 (0.9192)
+[2020/04/12 19:04:52 __main__ INFO] - Elapsed 237.03
+[2020/04/12 19:04:52 __main__ INFO] - Test 24
+[2020/04/12 19:05:07 __main__ INFO] - Epoch 24 Loss 0.3627 Accuracy 0.8791
+[2020/04/12 19:05:07 __main__ INFO] - Elapsed 14.85
+[2020/04/12 19:05:08 __main__ INFO] - Train 25
+[2020/04/12 19:05:09 __main__ INFO] - Epoch 25 Step 0/390 Loss 0.1630 (0.1630) Accuracy 0.9453 (0.9453)
+[2020/04/12 19:06:09 __main__ INFO] - Epoch 25 Step 100/390 Loss 0.2444 (0.2228) Accuracy 0.9375 (0.9240)
+[2020/04/12 19:07:10 __main__ INFO] - Epoch 25 Step 200/390 Loss 0.2788 (0.2302) Accuracy 0.8906 (0.9200)
+[2020/04/12 19:08:11 __main__ INFO] - Epoch 25 Step 300/390 Loss 0.3310 (0.2328) Accuracy 0.9062 (0.9191)
+[2020/04/12 19:09:05 __main__ INFO] - Elapsed 236.99
+[2020/04/12 19:09:05 __main__ INFO] - Test 25
+[2020/04/12 19:09:20 __main__ INFO] - Epoch 25 Loss 0.5251 Accuracy 0.8395
+[2020/04/12 19:09:20 __main__ INFO] - Elapsed 14.87
+[2020/04/12 19:09:20 __main__ INFO] - Train 26
+[2020/04/12 19:09:21 __main__ INFO] - Epoch 26 Step 0/390 Loss 0.2827 (0.2827) Accuracy 0.8984 (0.8984)
+[2020/04/12 19:10:22 __main__ INFO] - Epoch 26 Step 100/390 Loss 0.1440 (0.2202) Accuracy 0.9375 (0.9244)
+[2020/04/12 19:11:23 __main__ INFO] - Epoch 26 Step 200/390 Loss 0.1986 (0.2228) Accuracy 0.9219 (0.9239)
+[2020/04/12 19:12:23 __main__ INFO] - Epoch 26 Step 300/390 Loss 0.1419 (0.2283) Accuracy 0.9453 (0.9209)
+[2020/04/12 19:13:17 __main__ INFO] - Elapsed 236.88
+[2020/04/12 19:13:17 __main__ INFO] - Test 26
+[2020/04/12 19:13:32 __main__ INFO] - Epoch 26 Loss 0.5371 Accuracy 0.8248
+[2020/04/12 19:13:32 __main__ INFO] - Elapsed 14.99
+[2020/04/12 19:13:33 __main__ INFO] - Train 27
+[2020/04/12 19:13:34 __main__ INFO] - Epoch 27 Step 0/390 Loss 0.1535 (0.1535) Accuracy 0.9453 (0.9453)
+[2020/04/12 19:14:35 __main__ INFO] - Epoch 27 Step 100/390 Loss 0.1928 (0.2200) Accuracy 0.9297 (0.9251)
+[2020/04/12 19:15:35 __main__ INFO] - Epoch 27 Step 200/390 Loss 0.3526 (0.2281) Accuracy 0.8828 (0.9224)
+[2020/04/12 19:16:36 __main__ INFO] - Epoch 27 Step 300/390 Loss 0.2712 (0.2291) Accuracy 0.9141 (0.9222)
+[2020/04/12 19:17:30 __main__ INFO] - Elapsed 236.99
+[2020/04/12 19:17:30 __main__ INFO] - Test 27
+[2020/04/12 19:17:45 __main__ INFO] - Epoch 27 Loss 0.4553 Accuracy 0.8540
+[2020/04/12 19:17:45 __main__ INFO] - Elapsed 14.81
+[2020/04/12 19:17:46 __main__ INFO] - Train 28
+[2020/04/12 19:17:47 __main__ INFO] - Epoch 28 Step 0/390 Loss 0.1920 (0.1920) Accuracy 0.9375 (0.9375)
+[2020/04/12 19:18:47 __main__ INFO] - Epoch 28 Step 100/390 Loss 0.2974 (0.2033) Accuracy 0.8906 (0.9294)
+[2020/04/12 19:19:48 __main__ INFO] - Epoch 28 Step 200/390 Loss 0.2761 (0.2144) Accuracy 0.9375 (0.9255)
+[2020/04/12 19:20:49 __main__ INFO] - Epoch 28 Step 300/390 Loss 0.1910 (0.2188) Accuracy 0.9219 (0.9248)
+[2020/04/12 19:21:43 __main__ INFO] - Elapsed 236.85
+[2020/04/12 19:21:43 __main__ INFO] - Test 28
+[2020/04/12 19:21:58 __main__ INFO] - Epoch 28 Loss 0.4178 Accuracy 0.8669
+[2020/04/12 19:21:58 __main__ INFO] - Elapsed 14.86
+[2020/04/12 19:21:59 __main__ INFO] - Train 29
+[2020/04/12 19:21:59 __main__ INFO] - Epoch 29 Step 0/390 Loss 0.1364 (0.1364) Accuracy 0.9688 (0.9688)
+[2020/04/12 19:23:00 __main__ INFO] - Epoch 29 Step 100/390 Loss 0.1925 (0.1966) Accuracy 0.9297 (0.9329)
+[2020/04/12 19:24:01 __main__ INFO] - Epoch 29 Step 200/390 Loss 0.2686 (0.2110) Accuracy 0.9062 (0.9291)
+[2020/04/12 19:25:01 __main__ INFO] - Epoch 29 Step 300/390 Loss 0.2379 (0.2175) Accuracy 0.9375 (0.9262)
+[2020/04/12 19:25:55 __main__ INFO] - Elapsed 236.89
+[2020/04/12 19:25:55 __main__ INFO] - Test 29
+[2020/04/12 19:26:10 __main__ INFO] - Epoch 29 Loss 0.4145 Accuracy 0.8683
+[2020/04/12 19:26:10 __main__ INFO] - Elapsed 14.98
+[2020/04/12 19:26:11 __main__ INFO] - Train 30
+[2020/04/12 19:26:12 __main__ INFO] - Epoch 30 Step 0/390 Loss 0.1408 (0.1408) Accuracy 0.9609 (0.9609)
+[2020/04/12 19:27:13 __main__ INFO] - Epoch 30 Step 100/390 Loss 0.1184 (0.1870) Accuracy 0.9844 (0.9347)
+[2020/04/12 19:28:13 __main__ INFO] - Epoch 30 Step 200/390 Loss 0.2170 (0.2118) Accuracy 0.9297 (0.9276)
+[2020/04/12 19:29:14 __main__ INFO] - Epoch 30 Step 300/390 Loss 0.3687 (0.2174) Accuracy 0.8750 (0.9258)
+[2020/04/12 19:30:08 __main__ INFO] - Elapsed 236.85
+[2020/04/12 19:30:08 __main__ INFO] - Test 30
+[2020/04/12 19:30:23 __main__ INFO] - Epoch 30 Loss 0.4452 Accuracy 0.8641
+[2020/04/12 19:30:23 __main__ INFO] - Elapsed 14.94
+[2020/04/12 19:30:24 __main__ INFO] - Train 31
+[2020/04/12 19:30:25 __main__ INFO] - Epoch 31 Step 0/390 Loss 0.2565 (0.2565) Accuracy 0.8906 (0.8906)
+[2020/04/12 19:31:25 __main__ INFO] - Epoch 31 Step 100/390 Loss 0.1819 (0.2062) Accuracy 0.9219 (0.9284)
+[2020/04/12 19:32:26 __main__ INFO] - Epoch 31 Step 200/390 Loss 0.1273 (0.2064) Accuracy 0.9609 (0.9294)
+[2020/04/12 19:33:27 __main__ INFO] - Epoch 31 Step 300/390 Loss 0.2069 (0.2178) Accuracy 0.9375 (0.9256)
+[2020/04/12 19:34:21 __main__ INFO] - Elapsed 236.89
+[2020/04/12 19:34:21 __main__ INFO] - Test 31
+[2020/04/12 19:34:36 __main__ INFO] - Epoch 31 Loss 0.4077 Accuracy 0.8693
+[2020/04/12 19:34:36 __main__ INFO] - Elapsed 14.92
+[2020/04/12 19:34:37 __main__ INFO] - Train 32
+[2020/04/12 19:34:38 __main__ INFO] - Epoch 32 Step 0/390 Loss 0.1704 (0.1704) Accuracy 0.9453 (0.9453)
+[2020/04/12 19:35:38 __main__ INFO] - Epoch 32 Step 100/390 Loss 0.2438 (0.1992) Accuracy 0.9219 (0.9301)
+[2020/04/12 19:36:39 __main__ INFO] - Epoch 32 Step 200/390 Loss 0.1227 (0.2065) Accuracy 0.9609 (0.9288)
+[2020/04/12 19:37:40 __main__ INFO] - Epoch 32 Step 300/390 Loss 0.1496 (0.2114) Accuracy 0.9531 (0.9270)
+[2020/04/12 19:38:34 __main__ INFO] - Elapsed 236.99
+[2020/04/12 19:38:34 __main__ INFO] - Test 32
+[2020/04/12 19:38:48 __main__ INFO] - Epoch 32 Loss 0.4620 Accuracy 0.8494
+[2020/04/12 19:38:48 __main__ INFO] - Elapsed 14.81
+[2020/04/12 19:38:49 __main__ INFO] - Train 33
+[2020/04/12 19:38:50 __main__ INFO] - Epoch 33 Step 0/390 Loss 0.1127 (0.1127) Accuracy 0.9844 (0.9844)
+[2020/04/12 19:39:51 __main__ INFO] - Epoch 33 Step 100/390 Loss 0.2478 (0.2075) Accuracy 0.9219 (0.9292)
+[2020/04/12 19:40:51 __main__ INFO] - Epoch 33 Step 200/390 Loss 0.1101 (0.2099) Accuracy 0.9688 (0.9280)
+[2020/04/12 19:41:52 __main__ INFO] - Epoch 33 Step 300/390 Loss 0.2022 (0.2149) Accuracy 0.9375 (0.9264)
+[2020/04/12 19:42:46 __main__ INFO] - Elapsed 236.89
+[2020/04/12 19:42:46 __main__ INFO] - Test 33
+[2020/04/12 19:43:01 __main__ INFO] - Epoch 33 Loss 0.4410 Accuracy 0.8626
+[2020/04/12 19:43:01 __main__ INFO] - Elapsed 14.85
+[2020/04/12 19:43:02 __main__ INFO] - Train 34
+[2020/04/12 19:43:03 __main__ INFO] - Epoch 34 Step 0/390 Loss 0.3055 (0.3055) Accuracy 0.9141 (0.9141)
+[2020/04/12 19:44:03 __main__ INFO] - Epoch 34 Step 100/390 Loss 0.1791 (0.1914) Accuracy 0.9375 (0.9351)
+[2020/04/12 19:45:04 __main__ INFO] - Epoch 34 Step 200/390 Loss 0.1624 (0.2027) Accuracy 0.9375 (0.9304)
+[2020/04/12 19:46:05 __main__ INFO] - Epoch 34 Step 300/390 Loss 0.2758 (0.2081) Accuracy 0.9062 (0.9286)
+[2020/04/12 19:46:59 __main__ INFO] - Elapsed 236.91
+[2020/04/12 19:46:59 __main__ INFO] - Test 34
+[2020/04/12 19:47:14 __main__ INFO] - Epoch 34 Loss 0.4771 Accuracy 0.8508
+[2020/04/12 19:47:14 __main__ INFO] - Elapsed 14.85
+[2020/04/12 19:47:15 __main__ INFO] - Train 35
+[2020/04/12 19:47:16 __main__ INFO] - Epoch 35 Step 0/390 Loss 0.1646 (0.1646) Accuracy 0.9531 (0.9531)
+[2020/04/12 19:48:16 __main__ INFO] - Epoch 35 Step 100/390 Loss 0.1727 (0.1844) Accuracy 0.9453 (0.9367)
+[2020/04/12 19:49:17 __main__ INFO] - Epoch 35 Step 200/390 Loss 0.3082 (0.1979) Accuracy 0.8984 (0.9323)
+[2020/04/12 19:50:18 __main__ INFO] - Epoch 35 Step 300/390 Loss 0.3013 (0.2056) Accuracy 0.8672 (0.9293)
+[2020/04/12 19:51:12 __main__ INFO] - Elapsed 237.08
+[2020/04/12 19:51:12 __main__ INFO] - Test 35
+[2020/04/12 19:51:27 __main__ INFO] - Epoch 35 Loss 0.4197 Accuracy 0.8677
+[2020/04/12 19:51:27 __main__ INFO] - Elapsed 14.97
+[2020/04/12 19:51:28 __main__ INFO] - Train 36
+[2020/04/12 19:51:28 __main__ INFO] - Epoch 36 Step 0/390 Loss 0.1481 (0.1481) Accuracy 0.9531 (0.9531)
+[2020/04/12 19:52:29 __main__ INFO] - Epoch 36 Step 100/390 Loss 0.2671 (0.1953) Accuracy 0.9062 (0.9320)
+[2020/04/12 19:53:30 __main__ INFO] - Epoch 36 Step 200/390 Loss 0.1881 (0.2017) Accuracy 0.9453 (0.9300)
+[2020/04/12 19:54:30 __main__ INFO] - Epoch 36 Step 300/390 Loss 0.1235 (0.2057) Accuracy 0.9531 (0.9285)
+[2020/04/12 19:55:24 __main__ INFO] - Elapsed 236.96
+[2020/04/12 19:55:24 __main__ INFO] - Test 36
+[2020/04/12 19:55:39 __main__ INFO] - Epoch 36 Loss 0.4235 Accuracy 0.8618
+[2020/04/12 19:55:39 __main__ INFO] - Elapsed 14.86
+[2020/04/12 19:55:40 __main__ INFO] - Train 37
+[2020/04/12 19:55:41 __main__ INFO] - Epoch 37 Step 0/390 Loss 0.1955 (0.1955) Accuracy 0.9062 (0.9062)
+[2020/04/12 19:56:42 __main__ INFO] - Epoch 37 Step 100/390 Loss 0.1671 (0.1965) Accuracy 0.9531 (0.9330)
+[2020/04/12 19:57:43 __main__ INFO] - Epoch 37 Step 200/390 Loss 0.2053 (0.1973) Accuracy 0.9141 (0.9320)
+[2020/04/12 19:58:43 __main__ INFO] - Epoch 37 Step 300/390 Loss 0.2431 (0.1992) Accuracy 0.9141 (0.9300)
+[2020/04/12 19:59:37 __main__ INFO] - Elapsed 237.12
+[2020/04/12 19:59:37 __main__ INFO] - Test 37
+[2020/04/12 19:59:52 __main__ INFO] - Epoch 37 Loss 0.3742 Accuracy 0.8816
+[2020/04/12 19:59:52 __main__ INFO] - Elapsed 15.01
+[2020/04/12 19:59:53 __main__ INFO] - Train 38
+[2020/04/12 19:59:54 __main__ INFO] - Epoch 38 Step 0/390 Loss 0.3270 (0.3270) Accuracy 0.8984 (0.8984)
+[2020/04/12 20:00:55 __main__ INFO] - Epoch 38 Step 100/390 Loss 0.2054 (0.1874) Accuracy 0.9297 (0.9350)
+[2020/04/12 20:01:56 __main__ INFO] - Epoch 38 Step 200/390 Loss 0.1788 (0.1915) Accuracy 0.9453 (0.9341)
+[2020/04/12 20:02:56 __main__ INFO] - Epoch 38 Step 300/390 Loss 0.1333 (0.1947) Accuracy 0.9609 (0.9326)
+[2020/04/12 20:03:50 __main__ INFO] - Elapsed 237.09
+[2020/04/12 20:03:50 __main__ INFO] - Test 38
+[2020/04/12 20:04:05 __main__ INFO] - Epoch 38 Loss 0.3686 Accuracy 0.8876
+[2020/04/12 20:04:05 __main__ INFO] - Elapsed 14.90
+[2020/04/12 20:04:06 __main__ INFO] - Train 39
+[2020/04/12 20:04:07 __main__ INFO] - Epoch 39 Step 0/390 Loss 0.1993 (0.1993) Accuracy 0.9375 (0.9375)
+[2020/04/12 20:05:08 __main__ INFO] - Epoch 39 Step 100/390 Loss 0.2891 (0.1869) Accuracy 0.8906 (0.9381)
+[2020/04/12 20:06:08 __main__ INFO] - Epoch 39 Step 200/390 Loss 0.1601 (0.1877) Accuracy 0.9375 (0.9373)
+[2020/04/12 20:07:09 __main__ INFO] - Epoch 39 Step 300/390 Loss 0.2100 (0.1918) Accuracy 0.9062 (0.9349)
+[2020/04/12 20:08:03 __main__ INFO] - Elapsed 236.99
+[2020/04/12 20:08:03 __main__ INFO] - Test 39
+[2020/04/12 20:08:18 __main__ INFO] - Epoch 39 Loss 0.4783 Accuracy 0.8513
+[2020/04/12 20:08:18 __main__ INFO] - Elapsed 14.87
+[2020/04/12 20:08:19 __main__ INFO] - Train 40
+[2020/04/12 20:08:20 __main__ INFO] - Epoch 40 Step 0/390 Loss 0.1615 (0.1615) Accuracy 0.9453 (0.9453)
+[2020/04/12 20:09:21 __main__ INFO] - Epoch 40 Step 100/390 Loss 0.1437 (0.1911) Accuracy 0.9531 (0.9351)
+[2020/04/12 20:10:21 __main__ INFO] - Epoch 40 Step 200/390 Loss 0.2388 (0.1935) Accuracy 0.9141 (0.9322)
+[2020/04/12 20:11:22 __main__ INFO] - Epoch 40 Step 300/390 Loss 0.1925 (0.1948) Accuracy 0.9141 (0.9324)
+[2020/04/12 20:12:16 __main__ INFO] - Elapsed 236.96
+[2020/04/12 20:12:16 __main__ INFO] - Test 40
+[2020/04/12 20:12:31 __main__ INFO] - Epoch 40 Loss 0.3591 Accuracy 0.8860
+[2020/04/12 20:12:31 __main__ INFO] - Elapsed 15.03
+[2020/04/12 20:12:32 __main__ INFO] - Train 41
+[2020/04/12 20:12:33 __main__ INFO] - Epoch 41 Step 0/390 Loss 0.1580 (0.1580) Accuracy 0.9609 (0.9609)
+[2020/04/12 20:13:34 __main__ INFO] - Epoch 41 Step 100/390 Loss 0.2377 (0.1853) Accuracy 0.9297 (0.9373)
+[2020/04/12 20:14:34 __main__ INFO] - Epoch 41 Step 200/390 Loss 0.1269 (0.1887) Accuracy 0.9531 (0.9361)
+[2020/04/12 20:15:35 __main__ INFO] - Epoch 41 Step 300/390 Loss 0.2463 (0.1926) Accuracy 0.9219 (0.9337)
+[2020/04/12 20:16:29 __main__ INFO] - Elapsed 237.08
+[2020/04/12 20:16:29 __main__ INFO] - Test 41
+[2020/04/12 20:16:44 __main__ INFO] - Epoch 41 Loss 0.3473 Accuracy 0.8871
+[2020/04/12 20:16:44 __main__ INFO] - Elapsed 14.87
+[2020/04/12 20:16:45 __main__ INFO] - Train 42
+[2020/04/12 20:16:46 __main__ INFO] - Epoch 42 Step 0/390 Loss 0.1496 (0.1496) Accuracy 0.9375 (0.9375)
+[2020/04/12 20:17:47 __main__ INFO] - Epoch 42 Step 100/390 Loss 0.1076 (0.1794) Accuracy 0.9531 (0.9358)
+[2020/04/12 20:18:47 __main__ INFO] - Epoch 42 Step 200/390 Loss 0.1752 (0.1881) Accuracy 0.9531 (0.9340)
+[2020/04/12 20:19:48 __main__ INFO] - Epoch 42 Step 300/390 Loss 0.1893 (0.1921) Accuracy 0.9453 (0.9334)
+[2020/04/12 20:20:42 __main__ INFO] - Elapsed 237.07
+[2020/04/12 20:20:42 __main__ INFO] - Test 42
+[2020/04/12 20:20:57 __main__ INFO] - Epoch 42 Loss 0.3706 Accuracy 0.8803
+[2020/04/12 20:20:57 __main__ INFO] - Elapsed 14.86
+[2020/04/12 20:20:58 __main__ INFO] - Train 43
+[2020/04/12 20:20:59 __main__ INFO] - Epoch 43 Step 0/390 Loss 0.1192 (0.1192) Accuracy 0.9609 (0.9609)
+[2020/04/12 20:22:00 __main__ INFO] - Epoch 43 Step 100/390 Loss 0.1934 (0.1740) Accuracy 0.9297 (0.9397)
+[2020/04/12 20:23:00 __main__ INFO] - Epoch 43 Step 200/390 Loss 0.1934 (0.1881) Accuracy 0.9531 (0.9337)
+[2020/04/12 20:24:01 __main__ INFO] - Epoch 43 Step 300/390 Loss 0.2179 (0.1915) Accuracy 0.9219 (0.9329)
+[2020/04/12 20:24:55 __main__ INFO] - Elapsed 237.20
+[2020/04/12 20:24:55 __main__ INFO] - Test 43
+[2020/04/12 20:25:10 __main__ INFO] - Epoch 43 Loss 0.3540 Accuracy 0.8801
+[2020/04/12 20:25:10 __main__ INFO] - Elapsed 14.88
+[2020/04/12 20:25:11 __main__ INFO] - Train 44
+[2020/04/12 20:25:12 __main__ INFO] - Epoch 44 Step 0/390 Loss 0.1415 (0.1415) Accuracy 0.9609 (0.9609)
+[2020/04/12 20:26:12 __main__ INFO] - Epoch 44 Step 100/390 Loss 0.1977 (0.1841) Accuracy 0.9219 (0.9363)
+[2020/04/12 20:27:13 __main__ INFO] - Epoch 44 Step 200/390 Loss 0.1987 (0.1844) Accuracy 0.9375 (0.9375)
+[2020/04/12 20:28:14 __main__ INFO] - Epoch 44 Step 300/390 Loss 0.1367 (0.1862) Accuracy 0.9531 (0.9365)
+[2020/04/12 20:29:08 __main__ INFO] - Elapsed 237.00
+[2020/04/12 20:29:08 __main__ INFO] - Test 44
+[2020/04/12 20:29:23 __main__ INFO] - Epoch 44 Loss 0.5617 Accuracy 0.8390
+[2020/04/12 20:29:23 __main__ INFO] - Elapsed 14.98
+[2020/04/12 20:29:24 __main__ INFO] - Train 45
+[2020/04/12 20:29:25 __main__ INFO] - Epoch 45 Step 0/390 Loss 0.1144 (0.1144) Accuracy 0.9766 (0.9766)
+[2020/04/12 20:30:26 __main__ INFO] - Epoch 45 Step 100/390 Loss 0.1119 (0.1628) Accuracy 0.9688 (0.9462)
+[2020/04/12 20:31:26 __main__ INFO] - Epoch 45 Step 200/390 Loss 0.2816 (0.1758) Accuracy 0.8984 (0.9417)
+[2020/04/12 20:32:27 __main__ INFO] - Epoch 45 Step 300/390 Loss 0.1319 (0.1835) Accuracy 0.9609 (0.9392)
+[2020/04/12 20:33:21 __main__ INFO] - Elapsed 237.22
+[2020/04/12 20:33:21 __main__ INFO] - Test 45
+[2020/04/12 20:33:36 __main__ INFO] - Epoch 45 Loss 0.4552 Accuracy 0.8628
+[2020/04/12 20:33:36 __main__ INFO] - Elapsed 14.86
+[2020/04/12 20:33:37 __main__ INFO] - Train 46
+[2020/04/12 20:33:38 __main__ INFO] - Epoch 46 Step 0/390 Loss 0.1650 (0.1650) Accuracy 0.9375 (0.9375)
+[2020/04/12 20:34:38 __main__ INFO] - Epoch 46 Step 100/390 Loss 0.1095 (0.1737) Accuracy 0.9609 (0.9390)
+[2020/04/12 20:35:39 __main__ INFO] - Epoch 46 Step 200/390 Loss 0.2192 (0.1759) Accuracy 0.9219 (0.9391)
+[2020/04/12 20:36:40 __main__ INFO] - Epoch 46 Step 300/390 Loss 0.2492 (0.1831) Accuracy 0.8984 (0.9371)
+[2020/04/12 20:37:34 __main__ INFO] - Elapsed 237.00
+[2020/04/12 20:37:34 __main__ INFO] - Test 46
+[2020/04/12 20:37:49 __main__ INFO] - Epoch 46 Loss 0.3516 Accuracy 0.8888
+[2020/04/12 20:37:49 __main__ INFO] - Elapsed 14.99
+[2020/04/12 20:37:50 __main__ INFO] - Train 47
+[2020/04/12 20:37:51 __main__ INFO] - Epoch 47 Step 0/390 Loss 0.1485 (0.1485) Accuracy 0.9375 (0.9375)
+[2020/04/12 20:38:51 __main__ INFO] - Epoch 47 Step 100/390 Loss 0.2126 (0.1659) Accuracy 0.9062 (0.9445)
+[2020/04/12 20:39:52 __main__ INFO] - Epoch 47 Step 200/390 Loss 0.2084 (0.1743) Accuracy 0.9219 (0.9412)
+[2020/04/12 20:40:53 __main__ INFO] - Epoch 47 Step 300/390 Loss 0.2926 (0.1836) Accuracy 0.8906 (0.9369)
+[2020/04/12 20:41:47 __main__ INFO] - Elapsed 237.13
+[2020/04/12 20:41:47 __main__ INFO] - Test 47
+[2020/04/12 20:42:02 __main__ INFO] - Epoch 47 Loss 0.5351 Accuracy 0.8477
+[2020/04/12 20:42:02 __main__ INFO] - Elapsed 14.94
+[2020/04/12 20:42:03 __main__ INFO] - Train 48
+[2020/04/12 20:42:04 __main__ INFO] - Epoch 48 Step 0/390 Loss 0.1643 (0.1643) Accuracy 0.9375 (0.9375)
+[2020/04/12 20:43:04 __main__ INFO] - Epoch 48 Step 100/390 Loss 0.1158 (0.1718) Accuracy 0.9766 (0.9420)
+[2020/04/12 20:44:05 __main__ INFO] - Epoch 48 Step 200/390 Loss 0.1266 (0.1780) Accuracy 0.9688 (0.9390)
+[2020/04/12 20:45:06 __main__ INFO] - Epoch 48 Step 300/390 Loss 0.2076 (0.1811) Accuracy 0.9219 (0.9374)
+[2020/04/12 20:46:00 __main__ INFO] - Elapsed 237.12
+[2020/04/12 20:46:00 __main__ INFO] - Test 48
+[2020/04/12 20:46:15 __main__ INFO] - Epoch 48 Loss 0.4613 Accuracy 0.8604
+[2020/04/12 20:46:15 __main__ INFO] - Elapsed 14.84
+[2020/04/12 20:46:16 __main__ INFO] - Train 49
+[2020/04/12 20:46:17 __main__ INFO] - Epoch 49 Step 0/390 Loss 0.1450 (0.1450) Accuracy 0.9531 (0.9531)
+[2020/04/12 20:47:17 __main__ INFO] - Epoch 49 Step 100/390 Loss 0.1294 (0.1556) Accuracy 0.9531 (0.9463)
+[2020/04/12 20:48:18 __main__ INFO] - Epoch 49 Step 200/390 Loss 0.2187 (0.1678) Accuracy 0.8984 (0.9419)
+[2020/04/12 20:49:19 __main__ INFO] - Epoch 49 Step 300/390 Loss 0.1694 (0.1772) Accuracy 0.9531 (0.9390)
+[2020/04/12 20:50:13 __main__ INFO] - Elapsed 237.01
+[2020/04/12 20:50:13 __main__ INFO] - Test 49
+[2020/04/12 20:50:28 __main__ INFO] - Epoch 49 Loss 0.3516 Accuracy 0.8867
+[2020/04/12 20:50:28 __main__ INFO] - Elapsed 15.02
+[2020/04/12 20:50:29 __main__ INFO] - Train 50
+[2020/04/12 20:50:30 __main__ INFO] - Epoch 50 Step 0/390 Loss 0.2423 (0.2423) Accuracy 0.9062 (0.9062)
+[2020/04/12 20:51:30 __main__ INFO] - Epoch 50 Step 100/390 Loss 0.1464 (0.1648) Accuracy 0.9531 (0.9423)
+[2020/04/12 20:52:31 __main__ INFO] - Epoch 50 Step 200/390 Loss 0.1327 (0.1782) Accuracy 0.9531 (0.9375)
+[2020/04/12 20:53:32 __main__ INFO] - Epoch 50 Step 300/390 Loss 0.2205 (0.1815) Accuracy 0.9219 (0.9364)
+[2020/04/12 20:54:26 __main__ INFO] - Elapsed 237.03
+[2020/04/12 20:54:26 __main__ INFO] - Test 50
+[2020/04/12 20:54:41 __main__ INFO] - Epoch 50 Loss 0.3010 Accuracy 0.9033
+[2020/04/12 20:54:41 __main__ INFO] - Elapsed 14.99
+[2020/04/12 20:54:42 __main__ INFO] - Train 51
+[2020/04/12 20:54:43 __main__ INFO] - Epoch 51 Step 0/390 Loss 0.1236 (0.1236) Accuracy 0.9609 (0.9609)
+[2020/04/12 20:55:43 __main__ INFO] - Epoch 51 Step 100/390 Loss 0.1048 (0.1476) Accuracy 0.9688 (0.9503)
+[2020/04/12 20:56:44 __main__ INFO] - Epoch 51 Step 200/390 Loss 0.1586 (0.1662) Accuracy 0.9453 (0.9436)
+[2020/04/12 20:57:45 __main__ INFO] - Epoch 51 Step 300/390 Loss 0.2111 (0.1731) Accuracy 0.9375 (0.9415)
+[2020/04/12 20:58:39 __main__ INFO] - Elapsed 237.00
+[2020/04/12 20:58:39 __main__ INFO] - Test 51
+[2020/04/12 20:58:53 __main__ INFO] - Epoch 51 Loss 0.3609 Accuracy 0.8858
+[2020/04/12 20:58:53 __main__ INFO] - Elapsed 14.86
+[2020/04/12 20:58:54 __main__ INFO] - Train 52
+[2020/04/12 20:58:55 __main__ INFO] - Epoch 52 Step 0/390 Loss 0.1982 (0.1982) Accuracy 0.9531 (0.9531)
+[2020/04/12 20:59:56 __main__ INFO] - Epoch 52 Step 100/390 Loss 0.2277 (0.1648) Accuracy 0.9297 (0.9448)
+[2020/04/12 21:00:57 __main__ INFO] - Epoch 52 Step 200/390 Loss 0.2251 (0.1698) Accuracy 0.9219 (0.9419)
+[2020/04/12 21:01:57 __main__ INFO] - Epoch 52 Step 300/390 Loss 0.1753 (0.1785) Accuracy 0.9453 (0.9393)
+[2020/04/12 21:02:51 __main__ INFO] - Elapsed 237.01
+[2020/04/12 21:02:51 __main__ INFO] - Test 52
+[2020/04/12 21:03:06 __main__ INFO] - Epoch 52 Loss 0.4531 Accuracy 0.8678
+[2020/04/12 21:03:06 __main__ INFO] - Elapsed 14.84
+[2020/04/12 21:03:07 __main__ INFO] - Train 53
+[2020/04/12 21:03:08 __main__ INFO] - Epoch 53 Step 0/390 Loss 0.1150 (0.1150) Accuracy 0.9531 (0.9531)
+[2020/04/12 21:04:09 __main__ INFO] - Epoch 53 Step 100/390 Loss 0.0751 (0.1773) Accuracy 0.9844 (0.9395)
+[2020/04/12 21:05:09 __main__ INFO] - Epoch 53 Step 200/390 Loss 0.1656 (0.1760) Accuracy 0.9297 (0.9385)
+[2020/04/12 21:06:10 __main__ INFO] - Epoch 53 Step 300/390 Loss 0.1424 (0.1810) Accuracy 0.9531 (0.9374)
+[2020/04/12 21:07:04 __main__ INFO] - Elapsed 236.89
+[2020/04/12 21:07:04 __main__ INFO] - Test 53
+[2020/04/12 21:07:19 __main__ INFO] - Epoch 53 Loss 0.4037 Accuracy 0.8754
+[2020/04/12 21:07:19 __main__ INFO] - Elapsed 14.87
+[2020/04/12 21:07:20 __main__ INFO] - Train 54
+[2020/04/12 21:07:21 __main__ INFO] - Epoch 54 Step 0/390 Loss 0.1701 (0.1701) Accuracy 0.9453 (0.9453)
+[2020/04/12 21:08:21 __main__ INFO] - Epoch 54 Step 100/390 Loss 0.1885 (0.1634) Accuracy 0.9219 (0.9449)
+[2020/04/12 21:09:22 __main__ INFO] - Epoch 54 Step 200/390 Loss 0.2009 (0.1669) Accuracy 0.9453 (0.9428)
+[2020/04/12 21:10:23 __main__ INFO] - Epoch 54 Step 300/390 Loss 0.1769 (0.1718) Accuracy 0.9375 (0.9412)
+[2020/04/12 21:11:17 __main__ INFO] - Elapsed 236.96
+[2020/04/12 21:11:17 __main__ INFO] - Test 54
+[2020/04/12 21:11:32 __main__ INFO] - Epoch 54 Loss 0.5346 Accuracy 0.8393
+[2020/04/12 21:11:32 __main__ INFO] - Elapsed 14.83
+[2020/04/12 21:11:33 __main__ INFO] - Train 55
+[2020/04/12 21:11:34 __main__ INFO] - Epoch 55 Step 0/390 Loss 0.1086 (0.1086) Accuracy 0.9688 (0.9688)
+[2020/04/12 21:12:34 __main__ INFO] - Epoch 55 Step 100/390 Loss 0.2243 (0.1622) Accuracy 0.9062 (0.9455)
+[2020/04/12 21:13:35 __main__ INFO] - Epoch 55 Step 200/390 Loss 0.1633 (0.1767) Accuracy 0.9609 (0.9397)
+[2020/04/12 21:14:36 __main__ INFO] - Epoch 55 Step 300/390 Loss 0.1041 (0.1752) Accuracy 0.9609 (0.9396)
+[2020/04/12 21:15:30 __main__ INFO] - Elapsed 237.01
+[2020/04/12 21:15:30 __main__ INFO] - Test 55
+[2020/04/12 21:15:45 __main__ INFO] - Epoch 55 Loss 0.2978 Accuracy 0.8987
+[2020/04/12 21:15:45 __main__ INFO] - Elapsed 14.86
+[2020/04/12 21:15:45 __main__ INFO] - Train 56
+[2020/04/12 21:15:46 __main__ INFO] - Epoch 56 Step 0/390 Loss 0.2422 (0.2422) Accuracy 0.9062 (0.9062)
+[2020/04/12 21:16:47 __main__ INFO] - Epoch 56 Step 100/390 Loss 0.1072 (0.1603) Accuracy 0.9688 (0.9466)
+[2020/04/12 21:17:48 __main__ INFO] - Epoch 56 Step 200/390 Loss 0.1518 (0.1665) Accuracy 0.9219 (0.9439)
+[2020/04/12 21:18:48 __main__ INFO] - Epoch 56 Step 300/390 Loss 0.1323 (0.1651) Accuracy 0.9531 (0.9444)
+[2020/04/12 21:19:42 __main__ INFO] - Elapsed 236.92
+[2020/04/12 21:19:42 __main__ INFO] - Test 56
+[2020/04/12 21:19:57 __main__ INFO] - Epoch 56 Loss 0.4896 Accuracy 0.8519
+[2020/04/12 21:19:57 __main__ INFO] - Elapsed 14.85
+[2020/04/12 21:19:58 __main__ INFO] - Train 57
+[2020/04/12 21:19:59 __main__ INFO] - Epoch 57 Step 0/390 Loss 0.1501 (0.1501) Accuracy 0.9531 (0.9531)
+[2020/04/12 21:21:00 __main__ INFO] - Epoch 57 Step 100/390 Loss 0.1527 (0.1580) Accuracy 0.9375 (0.9444)
+[2020/04/12 21:22:00 __main__ INFO] - Epoch 57 Step 200/390 Loss 0.1652 (0.1667) Accuracy 0.9609 (0.9422)
+[2020/04/12 21:23:01 __main__ INFO] - Epoch 57 Step 300/390 Loss 0.1677 (0.1707) Accuracy 0.9609 (0.9411)
+[2020/04/12 21:23:55 __main__ INFO] - Elapsed 236.93
+[2020/04/12 21:23:55 __main__ INFO] - Test 57
+[2020/04/12 21:24:10 __main__ INFO] - Epoch 57 Loss 0.3456 Accuracy 0.8836
+[2020/04/12 21:24:10 __main__ INFO] - Elapsed 14.95
+[2020/04/12 21:24:11 __main__ INFO] - Train 58
+[2020/04/12 21:24:12 __main__ INFO] - Epoch 58 Step 0/390 Loss 0.1421 (0.1421) Accuracy 0.9688 (0.9688)
+[2020/04/12 21:25:13 __main__ INFO] - Epoch 58 Step 100/390 Loss 0.1286 (0.1611) Accuracy 0.9609 (0.9452)
+[2020/04/12 21:26:13 __main__ INFO] - Epoch 58 Step 200/390 Loss 0.1650 (0.1618) Accuracy 0.9297 (0.9445)
+[2020/04/12 21:27:14 __main__ INFO] - Epoch 58 Step 300/390 Loss 0.1551 (0.1679) Accuracy 0.9453 (0.9425)
+[2020/04/12 21:28:08 __main__ INFO] - Elapsed 237.03
+[2020/04/12 21:28:08 __main__ INFO] - Test 58
+[2020/04/12 21:28:23 __main__ INFO] - Epoch 58 Loss 0.4032 Accuracy 0.8752
+[2020/04/12 21:28:23 __main__ INFO] - Elapsed 14.80
+[2020/04/12 21:28:24 __main__ INFO] - Train 59
+[2020/04/12 21:28:25 __main__ INFO] - Epoch 59 Step 0/390 Loss 0.2071 (0.2071) Accuracy 0.9375 (0.9375)
+[2020/04/12 21:29:25 __main__ INFO] - Epoch 59 Step 100/390 Loss 0.1509 (0.1550) Accuracy 0.9609 (0.9476)
+[2020/04/12 21:30:26 __main__ INFO] - Epoch 59 Step 200/390 Loss 0.0811 (0.1550) Accuracy 0.9766 (0.9469)
+[2020/04/12 21:31:27 __main__ INFO] - Epoch 59 Step 300/390 Loss 0.2018 (0.1625) Accuracy 0.9219 (0.9436)
+[2020/04/12 21:32:21 __main__ INFO] - Elapsed 236.94
+[2020/04/12 21:32:21 __main__ INFO] - Test 59
+[2020/04/12 21:32:36 __main__ INFO] - Epoch 59 Loss 0.3526 Accuracy 0.8849
+[2020/04/12 21:32:36 __main__ INFO] - Elapsed 14.96
+[2020/04/12 21:32:37 __main__ INFO] - Train 60
+[2020/04/12 21:32:38 __main__ INFO] - Epoch 60 Step 0/390 Loss 0.0975 (0.0975) Accuracy 0.9609 (0.9609)
+[2020/04/12 21:33:38 __main__ INFO] - Epoch 60 Step 100/390 Loss 0.1495 (0.1460) Accuracy 0.9531 (0.9490)
+[2020/04/12 21:34:39 __main__ INFO] - Epoch 60 Step 200/390 Loss 0.1550 (0.1672) Accuracy 0.9375 (0.9416)
+[2020/04/12 21:35:40 __main__ INFO] - Epoch 60 Step 300/390 Loss 0.2470 (0.1700) Accuracy 0.8906 (0.9401)
+[2020/04/12 21:36:34 __main__ INFO] - Elapsed 237.00
+[2020/04/12 21:36:34 __main__ INFO] - Test 60
+[2020/04/12 21:36:48 __main__ INFO] - Epoch 60 Loss 0.3068 Accuracy 0.8994
+[2020/04/12 21:36:48 __main__ INFO] - Elapsed 14.81
+[2020/04/12 21:36:49 __main__ INFO] - Train 61
+[2020/04/12 21:36:50 __main__ INFO] - Epoch 61 Step 0/390 Loss 0.1132 (0.1132) Accuracy 0.9609 (0.9609)
+[2020/04/12 21:37:51 __main__ INFO] - Epoch 61 Step 100/390 Loss 0.2174 (0.1580) Accuracy 0.9219 (0.9465)
+[2020/04/12 21:38:51 __main__ INFO] - Epoch 61 Step 200/390 Loss 0.2200 (0.1681) Accuracy 0.9297 (0.9436)
+[2020/04/12 21:39:52 __main__ INFO] - Epoch 61 Step 300/390 Loss 0.1480 (0.1674) Accuracy 0.9609 (0.9435)
+[2020/04/12 21:40:46 __main__ INFO] - Elapsed 236.88
+[2020/04/12 21:40:46 __main__ INFO] - Test 61
+[2020/04/12 21:41:01 __main__ INFO] - Epoch 61 Loss 0.4073 Accuracy 0.8690
+[2020/04/12 21:41:01 __main__ INFO] - Elapsed 14.86
+[2020/04/12 21:41:02 __main__ INFO] - Train 62
+[2020/04/12 21:41:03 __main__ INFO] - Epoch 62 Step 0/390 Loss 0.1878 (0.1878) Accuracy 0.9375 (0.9375)
+[2020/04/12 21:42:04 __main__ INFO] - Epoch 62 Step 100/390 Loss 0.1431 (0.1560) Accuracy 0.9609 (0.9467)
+[2020/04/12 21:43:04 __main__ INFO] - Epoch 62 Step 200/390 Loss 0.2011 (0.1593) Accuracy 0.9297 (0.9459)
+[2020/04/12 21:44:05 __main__ INFO] - Epoch 62 Step 300/390 Loss 0.1603 (0.1637) Accuracy 0.9453 (0.9447)
+[2020/04/12 21:44:59 __main__ INFO] - Elapsed 236.98
+[2020/04/12 21:44:59 __main__ INFO] - Test 62
+[2020/04/12 21:45:14 __main__ INFO] - Epoch 62 Loss 0.3775 Accuracy 0.8780
+[2020/04/12 21:45:14 __main__ INFO] - Elapsed 14.97
+[2020/04/12 21:45:15 __main__ INFO] - Train 63
+[2020/04/12 21:45:16 __main__ INFO] - Epoch 63 Step 0/390 Loss 0.2858 (0.2858) Accuracy 0.9297 (0.9297)
+[2020/04/12 21:46:16 __main__ INFO] - Epoch 63 Step 100/390 Loss 0.1030 (0.1638) Accuracy 0.9609 (0.9466)
+[2020/04/12 21:47:17 __main__ INFO] - Epoch 63 Step 200/390 Loss 0.2337 (0.1671) Accuracy 0.9219 (0.9440)
+[2020/04/12 21:48:18 __main__ INFO] - Epoch 63 Step 300/390 Loss 0.1426 (0.1708) Accuracy 0.9531 (0.9433)
+[2020/04/12 21:49:12 __main__ INFO] - Elapsed 237.00
+[2020/04/12 21:49:12 __main__ INFO] - Test 63
+[2020/04/12 21:49:27 __main__ INFO] - Epoch 63 Loss 0.3335 Accuracy 0.8921
+[2020/04/12 21:49:27 __main__ INFO] - Elapsed 14.87
+[2020/04/12 21:49:28 __main__ INFO] - Train 64
+[2020/04/12 21:49:29 __main__ INFO] - Epoch 64 Step 0/390 Loss 0.2396 (0.2396) Accuracy 0.9062 (0.9062)
+[2020/04/12 21:50:29 __main__ INFO] - Epoch 64 Step 100/390 Loss 0.1305 (0.1497) Accuracy 0.9609 (0.9475)
+[2020/04/12 21:51:30 __main__ INFO] - Epoch 64 Step 200/390 Loss 0.1252 (0.1547) Accuracy 0.9531 (0.9466)
+[2020/04/12 21:52:30 __main__ INFO] - Epoch 64 Step 300/390 Loss 0.1864 (0.1604) Accuracy 0.9453 (0.9441)
+[2020/04/12 21:53:24 __main__ INFO] - Elapsed 236.95
+[2020/04/12 21:53:24 __main__ INFO] - Test 64
+[2020/04/12 21:53:39 __main__ INFO] - Epoch 64 Loss 0.4502 Accuracy 0.8606
+[2020/04/12 21:53:39 __main__ INFO] - Elapsed 14.85
+[2020/04/12 21:53:40 __main__ INFO] - Train 65
+[2020/04/12 21:53:41 __main__ INFO] - Epoch 65 Step 0/390 Loss 0.1095 (0.1095) Accuracy 0.9766 (0.9766)
+[2020/04/12 21:54:42 __main__ INFO] - Epoch 65 Step 100/390 Loss 0.2153 (0.1527) Accuracy 0.9375 (0.9493)
+[2020/04/12 21:55:43 __main__ INFO] - Epoch 65 Step 200/390 Loss 0.1091 (0.1682) Accuracy 0.9766 (0.9432)
+[2020/04/12 21:56:43 __main__ INFO] - Epoch 65 Step 300/390 Loss 0.1974 (0.1708) Accuracy 0.9453 (0.9413)
+[2020/04/12 21:57:37 __main__ INFO] - Elapsed 237.01
+[2020/04/12 21:57:37 __main__ INFO] - Test 65
+[2020/04/12 21:57:52 __main__ INFO] - Epoch 65 Loss 0.4031 Accuracy 0.8728
+[2020/04/12 21:57:52 __main__ INFO] - Elapsed 14.82
+[2020/04/12 21:57:53 __main__ INFO] - Train 66
+[2020/04/12 21:57:54 __main__ INFO] - Epoch 66 Step 0/390 Loss 0.1357 (0.1357) Accuracy 0.9453 (0.9453)
+[2020/04/12 21:58:54 __main__ INFO] - Epoch 66 Step 100/390 Loss 0.1284 (0.1514) Accuracy 0.9688 (0.9476)
+[2020/04/12 21:59:55 __main__ INFO] - Epoch 66 Step 200/390 Loss 0.1777 (0.1597) Accuracy 0.9297 (0.9449)
+[2020/04/12 22:00:56 __main__ INFO] - Epoch 66 Step 300/390 Loss 0.2488 (0.1647) Accuracy 0.8828 (0.9429)
+[2020/04/12 22:01:50 __main__ INFO] - Elapsed 236.93
+[2020/04/12 22:01:50 __main__ INFO] - Test 66
+[2020/04/12 22:02:05 __main__ INFO] - Epoch 66 Loss 0.3467 Accuracy 0.8905
+[2020/04/12 22:02:05 __main__ INFO] - Elapsed 14.96
+[2020/04/12 22:02:06 __main__ INFO] - Train 67
+[2020/04/12 22:02:07 __main__ INFO] - Epoch 67 Step 0/390 Loss 0.1753 (0.1753) Accuracy 0.9297 (0.9297)
+[2020/04/12 22:03:07 __main__ INFO] - Epoch 67 Step 100/390 Loss 0.1759 (0.1433) Accuracy 0.9609 (0.9503)
+[2020/04/12 22:04:08 __main__ INFO] - Epoch 67 Step 200/390 Loss 0.2110 (0.1498) Accuracy 0.9453 (0.9473)
+[2020/04/12 22:05:09 __main__ INFO] - Epoch 67 Step 300/390 Loss 0.1677 (0.1567) Accuracy 0.9375 (0.9451)
+[2020/04/12 22:06:03 __main__ INFO] - Elapsed 236.96
+[2020/04/12 22:06:03 __main__ INFO] - Test 67
+[2020/04/12 22:06:18 __main__ INFO] - Epoch 67 Loss 0.3507 Accuracy 0.8870
+[2020/04/12 22:06:18 __main__ INFO] - Elapsed 15.04
+[2020/04/12 22:06:19 __main__ INFO] - Train 68
+[2020/04/12 22:06:19 __main__ INFO] - Epoch 68 Step 0/390 Loss 0.1475 (0.1475) Accuracy 0.9453 (0.9453)
+[2020/04/12 22:07:20 __main__ INFO] - Epoch 68 Step 100/390 Loss 0.0921 (0.1537) Accuracy 0.9609 (0.9475)
+[2020/04/12 22:08:21 __main__ INFO] - Epoch 68 Step 200/390 Loss 0.1362 (0.1649) Accuracy 0.9453 (0.9440)
+[2020/04/12 22:09:21 __main__ INFO] - Epoch 68 Step 300/390 Loss 0.1192 (0.1689) Accuracy 0.9531 (0.9424)
+[2020/04/12 22:10:16 __main__ INFO] - Elapsed 236.93
+[2020/04/12 22:10:16 __main__ INFO] - Test 68
+[2020/04/12 22:10:30 __main__ INFO] - Epoch 68 Loss 0.3533 Accuracy 0.8823
+[2020/04/12 22:10:30 __main__ INFO] - Elapsed 14.82
+[2020/04/12 22:10:31 __main__ INFO] - Train 69
+[2020/04/12 22:10:32 __main__ INFO] - Epoch 69 Step 0/390 Loss 0.1553 (0.1553) Accuracy 0.9219 (0.9219)
+[2020/04/12 22:11:33 __main__ INFO] - Epoch 69 Step 100/390 Loss 0.2510 (0.1597) Accuracy 0.9141 (0.9466)
+[2020/04/12 22:12:34 __main__ INFO] - Epoch 69 Step 200/390 Loss 0.0670 (0.1621) Accuracy 0.9844 (0.9451)
+[2020/04/12 22:13:34 __main__ INFO] - Epoch 69 Step 300/390 Loss 0.2157 (0.1653) Accuracy 0.9219 (0.9435)
+[2020/04/12 22:14:28 __main__ INFO] - Elapsed 237.05
+[2020/04/12 22:14:28 __main__ INFO] - Test 69
+[2020/04/12 22:14:43 __main__ INFO] - Epoch 69 Loss 0.3805 Accuracy 0.8856
+[2020/04/12 22:14:43 __main__ INFO] - Elapsed 14.83
+[2020/04/12 22:14:44 __main__ INFO] - Train 70
+[2020/04/12 22:14:45 __main__ INFO] - Epoch 70 Step 0/390 Loss 0.2331 (0.2331) Accuracy 0.9141 (0.9141)
+[2020/04/12 22:15:46 __main__ INFO] - Epoch 70 Step 100/390 Loss 0.1316 (0.1467) Accuracy 0.9531 (0.9491)
+[2020/04/12 22:16:46 __main__ INFO] - Epoch 70 Step 200/390 Loss 0.0909 (0.1565) Accuracy 0.9688 (0.9461)
+[2020/04/12 22:17:47 __main__ INFO] - Epoch 70 Step 300/390 Loss 0.1110 (0.1613) Accuracy 0.9531 (0.9443)
+[2020/04/12 22:18:41 __main__ INFO] - Elapsed 237.14
+[2020/04/12 22:18:41 __main__ INFO] - Test 70
+[2020/04/12 22:18:56 __main__ INFO] - Epoch 70 Loss 0.2885 Accuracy 0.9028
+[2020/04/12 22:18:56 __main__ INFO] - Elapsed 14.91
+[2020/04/12 22:18:57 __main__ INFO] - Train 71
+[2020/04/12 22:18:58 __main__ INFO] - Epoch 71 Step 0/390 Loss 0.2205 (0.2205) Accuracy 0.9219 (0.9219)
+[2020/04/12 22:19:59 __main__ INFO] - Epoch 71 Step 100/390 Loss 0.1569 (0.1600) Accuracy 0.9219 (0.9456)
+[2020/04/12 22:20:59 __main__ INFO] - Epoch 71 Step 200/390 Loss 0.1973 (0.1577) Accuracy 0.9297 (0.9461)
+[2020/04/12 22:22:00 __main__ INFO] - Epoch 71 Step 300/390 Loss 0.1944 (0.1591) Accuracy 0.9375 (0.9448)
+[2020/04/12 22:22:54 __main__ INFO] - Elapsed 237.04
+[2020/04/12 22:22:54 __main__ INFO] - Test 71
+[2020/04/12 22:23:09 __main__ INFO] - Epoch 71 Loss 0.3103 Accuracy 0.8995
+[2020/04/12 22:23:09 __main__ INFO] - Elapsed 14.81
+[2020/04/12 22:23:10 __main__ INFO] - Train 72
+[2020/04/12 22:23:11 __main__ INFO] - Epoch 72 Step 0/390 Loss 0.0841 (0.0841) Accuracy 0.9766 (0.9766)
+[2020/04/12 22:24:11 __main__ INFO] - Epoch 72 Step 100/390 Loss 0.0904 (0.1448) Accuracy 0.9766 (0.9512)
+[2020/04/12 22:25:12 __main__ INFO] - Epoch 72 Step 200/390 Loss 0.2676 (0.1532) Accuracy 0.9375 (0.9471)
+[2020/04/12 22:26:13 __main__ INFO] - Epoch 72 Step 300/390 Loss 0.2151 (0.1615) Accuracy 0.9141 (0.9443)
+[2020/04/12 22:27:07 __main__ INFO] - Elapsed 236.86
+[2020/04/12 22:27:07 __main__ INFO] - Test 72
+[2020/04/12 22:27:21 __main__ INFO] - Epoch 72 Loss 0.3474 Accuracy 0.8926
+[2020/04/12 22:27:21 __main__ INFO] - Elapsed 14.88
+[2020/04/12 22:27:22 __main__ INFO] - Train 73
+[2020/04/12 22:27:23 __main__ INFO] - Epoch 73 Step 0/390 Loss 0.2052 (0.2052) Accuracy 0.9375 (0.9375)
+[2020/04/12 22:28:24 __main__ INFO] - Epoch 73 Step 100/390 Loss 0.1914 (0.1396) Accuracy 0.9375 (0.9539)
+[2020/04/12 22:29:25 __main__ INFO] - Epoch 73 Step 200/390 Loss 0.1801 (0.1529) Accuracy 0.9297 (0.9481)
+[2020/04/12 22:30:25 __main__ INFO] - Epoch 73 Step 300/390 Loss 0.2418 (0.1539) Accuracy 0.9062 (0.9479)
+[2020/04/12 22:31:19 __main__ INFO] - Elapsed 236.81
+[2020/04/12 22:31:19 __main__ INFO] - Test 73
+[2020/04/12 22:31:34 __main__ INFO] - Epoch 73 Loss 0.3293 Accuracy 0.8950
+[2020/04/12 22:31:34 __main__ INFO] - Elapsed 14.82
+[2020/04/12 22:31:35 __main__ INFO] - Train 74
+[2020/04/12 22:31:36 __main__ INFO] - Epoch 74 Step 0/390 Loss 0.1463 (0.1463) Accuracy 0.9375 (0.9375)
+[2020/04/12 22:32:37 __main__ INFO] - Epoch 74 Step 100/390 Loss 0.1214 (0.1424) Accuracy 0.9609 (0.9506)
+[2020/04/12 22:33:37 __main__ INFO] - Epoch 74 Step 200/390 Loss 0.1984 (0.1434) Accuracy 0.9375 (0.9505)
+[2020/04/12 22:34:38 __main__ INFO] - Epoch 74 Step 300/390 Loss 0.1205 (0.1508) Accuracy 0.9609 (0.9482)
+[2020/04/12 22:35:32 __main__ INFO] - Elapsed 236.73
+[2020/04/12 22:35:32 __main__ INFO] - Test 74
+[2020/04/12 22:35:47 __main__ INFO] - Epoch 74 Loss 0.3737 Accuracy 0.8829
+[2020/04/12 22:35:47 __main__ INFO] - Elapsed 15.00
+[2020/04/12 22:35:48 __main__ INFO] - Train 75
+[2020/04/12 22:35:49 __main__ INFO] - Epoch 75 Step 0/390 Loss 0.1335 (0.1335) Accuracy 0.9688 (0.9688)
+[2020/04/12 22:36:49 __main__ INFO] - Epoch 75 Step 100/390 Loss 0.0700 (0.1345) Accuracy 0.9844 (0.9549)
+[2020/04/12 22:37:50 __main__ INFO] - Epoch 75 Step 200/390 Loss 0.1822 (0.1472) Accuracy 0.9531 (0.9499)
+[2020/04/12 22:38:51 __main__ INFO] - Epoch 75 Step 300/390 Loss 0.2173 (0.1539) Accuracy 0.9141 (0.9473)
+[2020/04/12 22:39:45 __main__ INFO] - Elapsed 237.00
+[2020/04/12 22:39:45 __main__ INFO] - Test 75
+[2020/04/12 22:39:59 __main__ INFO] - Epoch 75 Loss 0.3585 Accuracy 0.8869
+[2020/04/12 22:39:59 __main__ INFO] - Elapsed 14.83
+[2020/04/12 22:40:00 __main__ INFO] - Train 76
+[2020/04/12 22:40:01 __main__ INFO] - Epoch 76 Step 0/390 Loss 0.1408 (0.1408) Accuracy 0.9453 (0.9453)
+[2020/04/12 22:41:02 __main__ INFO] - Epoch 76 Step 100/390 Loss 0.1723 (0.1339) Accuracy 0.9141 (0.9534)
+[2020/04/12 22:42:03 __main__ INFO] - Epoch 76 Step 200/390 Loss 0.1613 (0.1467) Accuracy 0.9375 (0.9487)
+[2020/04/12 22:43:03 __main__ INFO] - Epoch 76 Step 300/390 Loss 0.2274 (0.1538) Accuracy 0.9375 (0.9462)
+[2020/04/12 22:43:57 __main__ INFO] - Elapsed 236.77
+[2020/04/12 22:43:57 __main__ INFO] - Test 76
+[2020/04/12 22:44:12 __main__ INFO] - Epoch 76 Loss 0.3539 Accuracy 0.8829
+[2020/04/12 22:44:12 __main__ INFO] - Elapsed 14.99
+[2020/04/12 22:44:13 __main__ INFO] - Train 77
+[2020/04/12 22:44:14 __main__ INFO] - Epoch 77 Step 0/390 Loss 0.3083 (0.3083) Accuracy 0.8906 (0.8906)
+[2020/04/12 22:45:15 __main__ INFO] - Epoch 77 Step 100/390 Loss 0.1257 (0.1484) Accuracy 0.9688 (0.9489)
+[2020/04/12 22:46:15 __main__ INFO] - Epoch 77 Step 200/390 Loss 0.1405 (0.1506) Accuracy 0.9453 (0.9480)
+[2020/04/12 22:47:16 __main__ INFO] - Epoch 77 Step 300/390 Loss 0.1659 (0.1562) Accuracy 0.9297 (0.9463)
+[2020/04/12 22:48:10 __main__ INFO] - Elapsed 236.96
+[2020/04/12 22:48:10 __main__ INFO] - Test 77
+[2020/04/12 22:48:25 __main__ INFO] - Epoch 77 Loss 0.3930 Accuracy 0.8815
+[2020/04/12 22:48:25 __main__ INFO] - Elapsed 14.98
+[2020/04/12 22:48:26 __main__ INFO] - Train 78
+[2020/04/12 22:48:27 __main__ INFO] - Epoch 78 Step 0/390 Loss 0.1941 (0.1941) Accuracy 0.9297 (0.9297)
+[2020/04/12 22:49:28 __main__ INFO] - Epoch 78 Step 100/390 Loss 0.1615 (0.1426) Accuracy 0.9453 (0.9522)
+[2020/04/12 22:50:28 __main__ INFO] - Epoch 78 Step 200/390 Loss 0.2339 (0.1480) Accuracy 0.9375 (0.9501)
+[2020/04/12 22:51:29 __main__ INFO] - Epoch 78 Step 300/390 Loss 0.0552 (0.1533) Accuracy 1.0000 (0.9487)
+[2020/04/12 22:52:23 __main__ INFO] - Elapsed 236.93
+[2020/04/12 22:52:23 __main__ INFO] - Test 78
+[2020/04/12 22:52:38 __main__ INFO] - Epoch 78 Loss 0.3283 Accuracy 0.8935
+[2020/04/12 22:52:38 __main__ INFO] - Elapsed 14.89
+[2020/04/12 22:52:39 __main__ INFO] - Train 79
+[2020/04/12 22:52:40 __main__ INFO] - Epoch 79 Step 0/390 Loss 0.1829 (0.1829) Accuracy 0.9375 (0.9375)
+[2020/04/12 22:53:40 __main__ INFO] - Epoch 79 Step 100/390 Loss 0.1409 (0.1468) Accuracy 0.9375 (0.9497)
+[2020/04/12 22:54:41 __main__ INFO] - Epoch 79 Step 200/390 Loss 0.1848 (0.1538) Accuracy 0.9375 (0.9472)
+[2020/04/12 22:55:42 __main__ INFO] - Epoch 79 Step 300/390 Loss 0.0930 (0.1566) Accuracy 0.9844 (0.9455)
+[2020/04/12 22:56:36 __main__ INFO] - Elapsed 236.92
+[2020/04/12 22:56:36 __main__ INFO] - Test 79
+[2020/04/12 22:56:51 __main__ INFO] - Epoch 79 Loss 0.4308 Accuracy 0.8699
+[2020/04/12 22:56:51 __main__ INFO] - Elapsed 14.81
+[2020/04/12 22:56:52 __main__ INFO] - Train 80
+[2020/04/12 22:56:52 __main__ INFO] - Epoch 80 Step 0/390 Loss 0.1340 (0.1340) Accuracy 0.9531 (0.9531)
+[2020/04/12 22:57:53 __main__ INFO] - Epoch 80 Step 100/390 Loss 0.0999 (0.1390) Accuracy 0.9688 (0.9517)
+[2020/04/12 22:58:54 __main__ INFO] - Epoch 80 Step 200/390 Loss 0.1418 (0.1443) Accuracy 0.9609 (0.9493)
+[2020/04/12 22:59:54 __main__ INFO] - Epoch 80 Step 300/390 Loss 0.1935 (0.1505) Accuracy 0.9531 (0.9477)
+[2020/04/12 23:00:48 __main__ INFO] - Elapsed 236.79
+[2020/04/12 23:00:48 __main__ INFO] - Test 80
+[2020/04/12 23:01:03 __main__ INFO] - Epoch 80 Loss 0.3406 Accuracy 0.8879
+[2020/04/12 23:01:03 __main__ INFO] - Elapsed 14.85
+[2020/04/12 23:01:04 __main__ INFO] - Train 81
+[2020/04/12 23:01:05 __main__ INFO] - Epoch 81 Step 0/390 Loss 0.1505 (0.1505) Accuracy 0.9375 (0.9375)
+[2020/04/12 23:02:06 __main__ INFO] - Epoch 81 Step 100/390 Loss 0.1071 (0.1325) Accuracy 0.9766 (0.9565)
+[2020/04/12 23:03:06 __main__ INFO] - Epoch 81 Step 200/390 Loss 0.0756 (0.1449) Accuracy 0.9844 (0.9514)
+[2020/04/12 23:04:07 __main__ INFO] - Epoch 81 Step 300/390 Loss 0.1776 (0.1508) Accuracy 0.9297 (0.9495)
+[2020/04/12 23:05:01 __main__ INFO] - Elapsed 236.80
+[2020/04/12 23:05:01 __main__ INFO] - Test 81
+[2020/04/12 23:05:16 __main__ INFO] - Epoch 81 Loss 0.3776 Accuracy 0.8836
+[2020/04/12 23:05:16 __main__ INFO] - Elapsed 14.94
+[2020/04/12 23:05:17 __main__ INFO] - Train 82
+[2020/04/12 23:05:18 __main__ INFO] - Epoch 82 Step 0/390 Loss 0.1547 (0.1547) Accuracy 0.9453 (0.9453)
+[2020/04/12 23:06:18 __main__ INFO] - Epoch 82 Step 100/390 Loss 0.0701 (0.1399) Accuracy 0.9844 (0.9536)
+[2020/04/12 23:07:19 __main__ INFO] - Epoch 82 Step 200/390 Loss 0.1240 (0.1463) Accuracy 0.9688 (0.9508)
+[2020/04/12 23:08:20 __main__ INFO] - Epoch 82 Step 300/390 Loss 0.0793 (0.1495) Accuracy 0.9766 (0.9490)
+[2020/04/12 23:09:14 __main__ INFO] - Elapsed 236.95
+[2020/04/12 23:09:14 __main__ INFO] - Test 82
+[2020/04/12 23:09:29 __main__ INFO] - Epoch 82 Loss 0.3823 Accuracy 0.8830
+[2020/04/12 23:09:29 __main__ INFO] - Elapsed 14.85
+[2020/04/12 23:09:29 __main__ INFO] - Train 83
+[2020/04/12 23:09:30 __main__ INFO] - Epoch 83 Step 0/390 Loss 0.1203 (0.1203) Accuracy 0.9688 (0.9688)
+[2020/04/12 23:10:31 __main__ INFO] - Epoch 83 Step 100/390 Loss 0.1955 (0.1288) Accuracy 0.9219 (0.9578)
+[2020/04/12 23:11:32 __main__ INFO] - Epoch 83 Step 200/390 Loss 0.0747 (0.1379) Accuracy 0.9844 (0.9543)
+[2020/04/12 23:12:32 __main__ INFO] - Epoch 83 Step 300/390 Loss 0.1880 (0.1470) Accuracy 0.9297 (0.9505)
+[2020/04/12 23:13:26 __main__ INFO] - Elapsed 236.85
+[2020/04/12 23:13:26 __main__ INFO] - Test 83
+[2020/04/12 23:13:41 __main__ INFO] - Epoch 83 Loss 0.4604 Accuracy 0.8580
+[2020/04/12 23:13:41 __main__ INFO] - Elapsed 14.95
+[2020/04/12 23:13:42 __main__ INFO] - Train 84
+[2020/04/12 23:13:43 __main__ INFO] - Epoch 84 Step 0/390 Loss 0.1563 (0.1563) Accuracy 0.9531 (0.9531)
+[2020/04/12 23:14:44 __main__ INFO] - Epoch 84 Step 100/390 Loss 0.1825 (0.1475) Accuracy 0.9531 (0.9505)
+[2020/04/12 23:15:45 __main__ INFO] - Epoch 84 Step 200/390 Loss 0.0856 (0.1498) Accuracy 0.9766 (0.9491)
+[2020/04/12 23:16:45 __main__ INFO] - Epoch 84 Step 300/390 Loss 0.1917 (0.1533) Accuracy 0.9219 (0.9476)
+[2020/04/12 23:17:39 __main__ INFO] - Elapsed 237.00
+[2020/04/12 23:17:39 __main__ INFO] - Test 84
+[2020/04/12 23:17:54 __main__ INFO] - Epoch 84 Loss 0.5654 Accuracy 0.8378
+[2020/04/12 23:17:54 __main__ INFO] - Elapsed 14.80
+[2020/04/12 23:17:55 __main__ INFO] - Train 85
+[2020/04/12 23:17:56 __main__ INFO] - Epoch 85 Step 0/390 Loss 0.1820 (0.1820) Accuracy 0.9297 (0.9297)
+[2020/04/12 23:18:57 __main__ INFO] - Epoch 85 Step 100/390 Loss 0.1046 (0.1414) Accuracy 0.9688 (0.9517)
+[2020/04/12 23:19:57 __main__ INFO] - Epoch 85 Step 200/390 Loss 0.1632 (0.1470) Accuracy 0.9375 (0.9497)
+[2020/04/12 23:20:58 __main__ INFO] - Epoch 85 Step 300/390 Loss 0.1118 (0.1528) Accuracy 0.9922 (0.9479)
+[2020/04/12 23:21:52 __main__ INFO] - Elapsed 237.03
+[2020/04/12 23:21:52 __main__ INFO] - Test 85
+[2020/04/12 23:22:07 __main__ INFO] - Epoch 85 Loss 0.3330 Accuracy 0.8951
+[2020/04/12 23:22:07 __main__ INFO] - Elapsed 14.83
+[2020/04/12 23:22:08 __main__ INFO] - Train 86
+[2020/04/12 23:22:09 __main__ INFO] - Epoch 86 Step 0/390 Loss 0.1286 (0.1286) Accuracy 0.9453 (0.9453)
+[2020/04/12 23:23:10 __main__ INFO] - Epoch 86 Step 100/390 Loss 0.1099 (0.1342) Accuracy 0.9609 (0.9535)
+[2020/04/12 23:24:10 __main__ INFO] - Epoch 86 Step 200/390 Loss 0.1744 (0.1395) Accuracy 0.9609 (0.9528)
+[2020/04/12 23:25:11 __main__ INFO] - Epoch 86 Step 300/390 Loss 0.1945 (0.1469) Accuracy 0.9297 (0.9503)
+[2020/04/12 23:26:05 __main__ INFO] - Elapsed 237.01
+[2020/04/12 23:26:05 __main__ INFO] - Test 86
+[2020/04/12 23:26:20 __main__ INFO] - Epoch 86 Loss 0.3090 Accuracy 0.8988
+[2020/04/12 23:26:20 __main__ INFO] - Elapsed 14.84
+[2020/04/12 23:26:21 __main__ INFO] - Train 87
+[2020/04/12 23:26:21 __main__ INFO] - Epoch 87 Step 0/390 Loss 0.0590 (0.0590) Accuracy 0.9844 (0.9844)
+[2020/04/12 23:27:22 __main__ INFO] - Epoch 87 Step 100/390 Loss 0.1698 (0.1455) Accuracy 0.9453 (0.9498)
+[2020/04/12 23:28:23 __main__ INFO] - Epoch 87 Step 200/390 Loss 0.1705 (0.1504) Accuracy 0.9375 (0.9487)
+[2020/04/12 23:29:23 __main__ INFO] - Epoch 87 Step 300/390 Loss 0.2286 (0.1541) Accuracy 0.8984 (0.9479)
+[2020/04/12 23:30:17 __main__ INFO] - Elapsed 236.86
+[2020/04/12 23:30:17 __main__ INFO] - Test 87
+[2020/04/12 23:30:32 __main__ INFO] - Epoch 87 Loss 0.4311 Accuracy 0.8730
+[2020/04/12 23:30:32 __main__ INFO] - Elapsed 14.82
+[2020/04/12 23:30:33 __main__ INFO] - Train 88
+[2020/04/12 23:30:34 __main__ INFO] - Epoch 88 Step 0/390 Loss 0.0787 (0.0787) Accuracy 0.9766 (0.9766)
+[2020/04/12 23:31:35 __main__ INFO] - Epoch 88 Step 100/390 Loss 0.1071 (0.1262) Accuracy 0.9609 (0.9578)
+[2020/04/12 23:32:35 __main__ INFO] - Epoch 88 Step 200/390 Loss 0.1895 (0.1373) Accuracy 0.9531 (0.9538)
+[2020/04/12 23:33:36 __main__ INFO] - Epoch 88 Step 300/390 Loss 0.1332 (0.1448) Accuracy 0.9531 (0.9506)
+[2020/04/12 23:34:30 __main__ INFO] - Elapsed 236.89
+[2020/04/12 23:34:30 __main__ INFO] - Test 88
+[2020/04/12 23:34:45 __main__ INFO] - Epoch 88 Loss 0.3069 Accuracy 0.9014
+[2020/04/12 23:34:45 __main__ INFO] - Elapsed 14.91
+[2020/04/12 23:34:46 __main__ INFO] - Train 89
+[2020/04/12 23:34:47 __main__ INFO] - Epoch 89 Step 0/390 Loss 0.0874 (0.0874) Accuracy 0.9844 (0.9844)
+[2020/04/12 23:35:48 __main__ INFO] - Epoch 89 Step 100/390 Loss 0.1065 (0.1455) Accuracy 0.9609 (0.9506)
+[2020/04/12 23:36:48 __main__ INFO] - Epoch 89 Step 200/390 Loss 0.0974 (0.1468) Accuracy 0.9531 (0.9504)
+[2020/04/12 23:37:49 __main__ INFO] - Epoch 89 Step 300/390 Loss 0.2374 (0.1543) Accuracy 0.9375 (0.9482)
+[2020/04/12 23:38:43 __main__ INFO] - Elapsed 236.87
+[2020/04/12 23:38:43 __main__ INFO] - Test 89
+[2020/04/12 23:38:58 __main__ INFO] - Epoch 89 Loss 0.5240 Accuracy 0.8418
+[2020/04/12 23:38:58 __main__ INFO] - Elapsed 14.81
+[2020/04/12 23:38:59 __main__ INFO] - Train 90
+[2020/04/12 23:39:00 __main__ INFO] - Epoch 90 Step 0/390 Loss 0.1332 (0.1332) Accuracy 0.9531 (0.9531)
+[2020/04/12 23:40:00 __main__ INFO] - Epoch 90 Step 100/390 Loss 0.1360 (0.1456) Accuracy 0.9453 (0.9490)
+[2020/04/12 23:41:01 __main__ INFO] - Epoch 90 Step 200/390 Loss 0.0888 (0.1449) Accuracy 0.9688 (0.9490)
+[2020/04/12 23:42:01 __main__ INFO] - Epoch 90 Step 300/390 Loss 0.1319 (0.1476) Accuracy 0.9609 (0.9483)
+[2020/04/12 23:42:56 __main__ INFO] - Elapsed 236.97
+[2020/04/12 23:42:56 __main__ INFO] - Test 90
+[2020/04/12 23:43:10 __main__ INFO] - Epoch 90 Loss 0.3331 Accuracy 0.8955
+[2020/04/12 23:43:10 __main__ INFO] - Elapsed 14.82
+[2020/04/12 23:43:11 __main__ INFO] - Train 91
+[2020/04/12 23:43:12 __main__ INFO] - Epoch 91 Step 0/390 Loss 0.2293 (0.2293) Accuracy 0.8984 (0.8984)
+[2020/04/12 23:44:13 __main__ INFO] - Epoch 91 Step 100/390 Loss 0.1945 (0.1415) Accuracy 0.9219 (0.9522)
+[2020/04/12 23:45:14 __main__ INFO] - Epoch 91 Step 200/390 Loss 0.1942 (0.1539) Accuracy 0.8984 (0.9476)
+[2020/04/12 23:46:14 __main__ INFO] - Epoch 91 Step 300/390 Loss 0.1067 (0.1571) Accuracy 0.9766 (0.9470)
+[2020/04/12 23:47:08 __main__ INFO] - Elapsed 237.05
+[2020/04/12 23:47:08 __main__ INFO] - Test 91
+[2020/04/12 23:47:23 __main__ INFO] - Epoch 91 Loss 0.4039 Accuracy 0.8714
+[2020/04/12 23:47:23 __main__ INFO] - Elapsed 14.84
+[2020/04/12 23:47:24 __main__ INFO] - Train 92
+[2020/04/12 23:47:25 __main__ INFO] - Epoch 92 Step 0/390 Loss 0.1072 (0.1072) Accuracy 0.9688 (0.9688)
+[2020/04/12 23:48:26 __main__ INFO] - Epoch 92 Step 100/390 Loss 0.1309 (0.1322) Accuracy 0.9375 (0.9559)
+[2020/04/12 23:49:26 __main__ INFO] - Epoch 92 Step 200/390 Loss 0.1144 (0.1493) Accuracy 0.9766 (0.9492)
+[2020/04/12 23:50:27 __main__ INFO] - Epoch 92 Step 300/390 Loss 0.1006 (0.1519) Accuracy 0.9766 (0.9474)
+[2020/04/12 23:51:21 __main__ INFO] - Elapsed 236.87
+[2020/04/12 23:51:21 __main__ INFO] - Test 92
+[2020/04/12 23:51:36 __main__ INFO] - Epoch 92 Loss 0.3346 Accuracy 0.8931
+[2020/04/12 23:51:36 __main__ INFO] - Elapsed 14.84
+[2020/04/12 23:51:37 __main__ INFO] - Train 93
+[2020/04/12 23:51:38 __main__ INFO] - Epoch 93 Step 0/390 Loss 0.0927 (0.0927) Accuracy 0.9609 (0.9609)
+[2020/04/12 23:52:38 __main__ INFO] - Epoch 93 Step 100/390 Loss 0.1123 (0.1293) Accuracy 0.9609 (0.9571)
+[2020/04/12 23:53:39 __main__ INFO] - Epoch 93 Step 200/390 Loss 0.1286 (0.1395) Accuracy 0.9531 (0.9524)
+[2020/04/12 23:54:40 __main__ INFO] - Epoch 93 Step 300/390 Loss 0.1730 (0.1490) Accuracy 0.9375 (0.9486)
+[2020/04/12 23:55:34 __main__ INFO] - Elapsed 236.89
+[2020/04/12 23:55:34 __main__ INFO] - Test 93
+[2020/04/12 23:55:49 __main__ INFO] - Epoch 93 Loss 0.3655 Accuracy 0.8850
+[2020/04/12 23:55:49 __main__ INFO] - Elapsed 14.84
+[2020/04/12 23:55:50 __main__ INFO] - Train 94
+[2020/04/12 23:55:51 __main__ INFO] - Epoch 94 Step 0/390 Loss 0.0696 (0.0696) Accuracy 0.9844 (0.9844)
+[2020/04/12 23:56:51 __main__ INFO] - Epoch 94 Step 100/390 Loss 0.1412 (0.1339) Accuracy 0.9453 (0.9529)
+[2020/04/12 23:57:52 __main__ INFO] - Epoch 94 Step 200/390 Loss 0.0660 (0.1383) Accuracy 0.9844 (0.9516)
+[2020/04/12 23:58:52 __main__ INFO] - Epoch 94 Step 300/390 Loss 0.2227 (0.1448) Accuracy 0.9062 (0.9488)
+[2020/04/12 23:59:47 __main__ INFO] - Elapsed 237.00
+[2020/04/12 23:59:47 __main__ INFO] - Test 94
+[2020/04/13 00:00:01 __main__ INFO] - Epoch 94 Loss 0.3274 Accuracy 0.8944
+[2020/04/13 00:00:01 __main__ INFO] - Elapsed 14.86
+[2020/04/13 00:00:02 __main__ INFO] - Train 95
+[2020/04/13 00:00:03 __main__ INFO] - Epoch 95 Step 0/390 Loss 0.1071 (0.1071) Accuracy 0.9609 (0.9609)
+[2020/04/13 00:01:04 __main__ INFO] - Epoch 95 Step 100/390 Loss 0.1493 (0.1302) Accuracy 0.9609 (0.9566)
+[2020/04/13 00:02:05 __main__ INFO] - Epoch 95 Step 200/390 Loss 0.1646 (0.1391) Accuracy 0.9453 (0.9525)
+[2020/04/13 00:03:05 __main__ INFO] - Epoch 95 Step 300/390 Loss 0.0848 (0.1481) Accuracy 0.9766 (0.9499)
+[2020/04/13 00:03:59 __main__ INFO] - Elapsed 237.01
+[2020/04/13 00:03:59 __main__ INFO] - Test 95
+[2020/04/13 00:04:14 __main__ INFO] - Epoch 95 Loss 0.4296 Accuracy 0.8680
+[2020/04/13 00:04:14 __main__ INFO] - Elapsed 14.90
+[2020/04/13 00:04:15 __main__ INFO] - Train 96
+[2020/04/13 00:04:16 __main__ INFO] - Epoch 96 Step 0/390 Loss 0.1727 (0.1727) Accuracy 0.9531 (0.9531)
+[2020/04/13 00:05:17 __main__ INFO] - Epoch 96 Step 100/390 Loss 0.0952 (0.1314) Accuracy 0.9766 (0.9551)
+[2020/04/13 00:06:18 __main__ INFO] - Epoch 96 Step 200/390 Loss 0.2117 (0.1393) Accuracy 0.9219 (0.9528)
+[2020/04/13 00:07:18 __main__ INFO] - Epoch 96 Step 300/390 Loss 0.1866 (0.1430) Accuracy 0.9297 (0.9517)
+[2020/04/13 00:08:12 __main__ INFO] - Elapsed 236.91
+[2020/04/13 00:08:12 __main__ INFO] - Test 96
+[2020/04/13 00:08:27 __main__ INFO] - Epoch 96 Loss 0.4388 Accuracy 0.8623
+[2020/04/13 00:08:27 __main__ INFO] - Elapsed 14.83
+[2020/04/13 00:08:28 __main__ INFO] - Train 97
+[2020/04/13 00:08:29 __main__ INFO] - Epoch 97 Step 0/390 Loss 0.2155 (0.2155) Accuracy 0.9375 (0.9375)
+[2020/04/13 00:09:30 __main__ INFO] - Epoch 97 Step 100/390 Loss 0.0964 (0.1338) Accuracy 0.9844 (0.9549)
+[2020/04/13 00:10:30 __main__ INFO] - Epoch 97 Step 200/390 Loss 0.1397 (0.1425) Accuracy 0.9766 (0.9516)
+[2020/04/13 00:11:31 __main__ INFO] - Epoch 97 Step 300/390 Loss 0.1095 (0.1466) Accuracy 0.9453 (0.9494)
+[2020/04/13 00:12:25 __main__ INFO] - Elapsed 236.94
+[2020/04/13 00:12:25 __main__ INFO] - Test 97
+[2020/04/13 00:12:40 __main__ INFO] - Epoch 97 Loss 0.3817 Accuracy 0.8808
+[2020/04/13 00:12:40 __main__ INFO] - Elapsed 14.82
+[2020/04/13 00:12:41 __main__ INFO] - Train 98
+[2020/04/13 00:12:42 __main__ INFO] - Epoch 98 Step 0/390 Loss 0.1119 (0.1119) Accuracy 0.9688 (0.9688)
+[2020/04/13 00:13:42 __main__ INFO] - Epoch 98 Step 100/390 Loss 0.0940 (0.1306) Accuracy 0.9609 (0.9536)
+[2020/04/13 00:14:43 __main__ INFO] - Epoch 98 Step 200/390 Loss 0.0975 (0.1387) Accuracy 0.9766 (0.9522)
+[2020/04/13 00:15:44 __main__ INFO] - Epoch 98 Step 300/390 Loss 0.1718 (0.1451) Accuracy 0.9375 (0.9503)
+[2020/04/13 00:16:38 __main__ INFO] - Elapsed 236.85
+[2020/04/13 00:16:38 __main__ INFO] - Test 98
+[2020/04/13 00:16:53 __main__ INFO] - Epoch 98 Loss 0.3872 Accuracy 0.8815
+[2020/04/13 00:16:53 __main__ INFO] - Elapsed 15.01
+[2020/04/13 00:16:54 __main__ INFO] - Train 99
+[2020/04/13 00:16:55 __main__ INFO] - Epoch 99 Step 0/390 Loss 0.0602 (0.0602) Accuracy 0.9922 (0.9922)
+[2020/04/13 00:17:55 __main__ INFO] - Epoch 99 Step 100/390 Loss 0.2026 (0.1333) Accuracy 0.9297 (0.9531)
+[2020/04/13 00:18:56 __main__ INFO] - Epoch 99 Step 200/390 Loss 0.1163 (0.1419) Accuracy 0.9531 (0.9504)
+[2020/04/13 00:19:57 __main__ INFO] - Epoch 99 Step 300/390 Loss 0.1662 (0.1442) Accuracy 0.9453 (0.9500)
+[2020/04/13 00:20:51 __main__ INFO] - Elapsed 237.01
+[2020/04/13 00:20:51 __main__ INFO] - Test 99
+[2020/04/13 00:21:06 __main__ INFO] - Epoch 99 Loss 0.3225 Accuracy 0.8965
+[2020/04/13 00:21:06 __main__ INFO] - Elapsed 14.93
+[2020/04/13 00:21:07 __main__ INFO] - Train 100
+[2020/04/13 00:21:08 __main__ INFO] - Epoch 100 Step 0/390 Loss 0.1288 (0.1288) Accuracy 0.9453 (0.9453)
+[2020/04/13 00:22:08 __main__ INFO] - Epoch 100 Step 100/390 Loss 0.1093 (0.1447) Accuracy 0.9688 (0.9506)
+[2020/04/13 00:23:09 __main__ INFO] - Epoch 100 Step 200/390 Loss 0.1990 (0.1502) Accuracy 0.9219 (0.9483)
+[2020/04/13 00:24:10 __main__ INFO] - Epoch 100 Step 300/390 Loss 0.1360 (0.1542) Accuracy 0.9609 (0.9465)
+[2020/04/13 00:25:04 __main__ INFO] - Elapsed 236.87
+[2020/04/13 00:25:04 __main__ INFO] - Test 100
+[2020/04/13 00:25:18 __main__ INFO] - Epoch 100 Loss 0.3646 Accuracy 0.8875
+[2020/04/13 00:25:18 __main__ INFO] - Elapsed 14.85
+[2020/04/13 00:25:19 __main__ INFO] - Train 101
+[2020/04/13 00:25:20 __main__ INFO] - Epoch 101 Step 0/390 Loss 0.0900 (0.0900) Accuracy 0.9766 (0.9766)
+[2020/04/13 00:26:21 __main__ INFO] - Epoch 101 Step 100/390 Loss 0.1136 (0.1277) Accuracy 0.9922 (0.9577)
+[2020/04/13 00:27:22 __main__ INFO] - Epoch 101 Step 200/390 Loss 0.0876 (0.1357) Accuracy 0.9688 (0.9540)
+[2020/04/13 00:28:22 __main__ INFO] - Epoch 101 Step 300/390 Loss 0.1324 (0.1410) Accuracy 0.9531 (0.9522)
+[2020/04/13 00:29:16 __main__ INFO] - Elapsed 236.97
+[2020/04/13 00:29:16 __main__ INFO] - Test 101
+[2020/04/13 00:29:31 __main__ INFO] - Epoch 101 Loss 0.3433 Accuracy 0.8889
+[2020/04/13 00:29:31 __main__ INFO] - Elapsed 15.02
+[2020/04/13 00:29:32 __main__ INFO] - Train 102
+[2020/04/13 00:29:33 __main__ INFO] - Epoch 102 Step 0/390 Loss 0.1812 (0.1812) Accuracy 0.9375 (0.9375)
+[2020/04/13 00:30:34 __main__ INFO] - Epoch 102 Step 100/390 Loss 0.1277 (0.1382) Accuracy 0.9609 (0.9506)
+[2020/04/13 00:31:35 __main__ INFO] - Epoch 102 Step 200/390 Loss 0.2017 (0.1462) Accuracy 0.9531 (0.9504)
+[2020/04/13 00:32:35 __main__ INFO] - Epoch 102 Step 300/390 Loss 0.1605 (0.1496) Accuracy 0.9453 (0.9489)
+[2020/04/13 00:33:29 __main__ INFO] - Elapsed 237.05
+[2020/04/13 00:33:29 __main__ INFO] - Test 102
+[2020/04/13 00:33:44 __main__ INFO] - Epoch 102 Loss 0.3052 Accuracy 0.8988
+[2020/04/13 00:33:44 __main__ INFO] - Elapsed 14.90
+[2020/04/13 00:33:45 __main__ INFO] - Train 103
+[2020/04/13 00:33:46 __main__ INFO] - Epoch 103 Step 0/390 Loss 0.0932 (0.0932) Accuracy 0.9688 (0.9688)
+[2020/04/13 00:34:47 __main__ INFO] - Epoch 103 Step 100/390 Loss 0.1579 (0.1320) Accuracy 0.9531 (0.9563)
+[2020/04/13 00:35:48 __main__ INFO] - Epoch 103 Step 200/390 Loss 0.1640 (0.1380) Accuracy 0.9375 (0.9536)
+[2020/04/13 00:36:48 __main__ INFO] - Epoch 103 Step 300/390 Loss 0.2101 (0.1412) Accuracy 0.9141 (0.9520)
+[2020/04/13 00:37:42 __main__ INFO] - Elapsed 237.01
+[2020/04/13 00:37:42 __main__ INFO] - Test 103
+[2020/04/13 00:37:57 __main__ INFO] - Epoch 103 Loss 0.3838 Accuracy 0.8800
+[2020/04/13 00:37:57 __main__ INFO] - Elapsed 14.83
+[2020/04/13 00:37:58 __main__ INFO] - Train 104
+[2020/04/13 00:37:59 __main__ INFO] - Epoch 104 Step 0/390 Loss 0.1701 (0.1701) Accuracy 0.9297 (0.9297)
+[2020/04/13 00:39:00 __main__ INFO] - Epoch 104 Step 100/390 Loss 0.1673 (0.1442) Accuracy 0.9453 (0.9524)
+[2020/04/13 00:40:00 __main__ INFO] - Epoch 104 Step 200/390 Loss 0.1268 (0.1418) Accuracy 0.9688 (0.9515)
+[2020/04/13 00:41:01 __main__ INFO] - Epoch 104 Step 300/390 Loss 0.2312 (0.1476) Accuracy 0.8984 (0.9490)
+[2020/04/13 00:41:55 __main__ INFO] - Elapsed 236.87
+[2020/04/13 00:41:55 __main__ INFO] - Test 104
+[2020/04/13 00:42:10 __main__ INFO] - Epoch 104 Loss 0.4632 Accuracy 0.8671
+[2020/04/13 00:42:10 __main__ INFO] - Elapsed 14.84
+[2020/04/13 00:42:11 __main__ INFO] - Train 105
+[2020/04/13 00:42:12 __main__ INFO] - Epoch 105 Step 0/390 Loss 0.1795 (0.1795) Accuracy 0.9297 (0.9297)
+[2020/04/13 00:43:13 __main__ INFO] - Epoch 105 Step 100/390 Loss 0.1545 (0.1299) Accuracy 0.9531 (0.9577)
+[2020/04/13 00:44:13 __main__ INFO] - Epoch 105 Step 200/390 Loss 0.0988 (0.1387) Accuracy 0.9766 (0.9538)
+[2020/04/13 00:45:14 __main__ INFO] - Epoch 105 Step 300/390 Loss 0.1281 (0.1414) Accuracy 0.9766 (0.9522)
+[2020/04/13 00:46:08 __main__ INFO] - Elapsed 236.93
+[2020/04/13 00:46:08 __main__ INFO] - Test 105
+[2020/04/13 00:46:23 __main__ INFO] - Epoch 105 Loss 0.3627 Accuracy 0.8841
+[2020/04/13 00:46:23 __main__ INFO] - Elapsed 14.82
+[2020/04/13 00:46:24 __main__ INFO] - Train 106
+[2020/04/13 00:46:25 __main__ INFO] - Epoch 106 Step 0/390 Loss 0.1041 (0.1041) Accuracy 0.9531 (0.9531)
+[2020/04/13 00:47:25 __main__ INFO] - Epoch 106 Step 100/390 Loss 0.0696 (0.1249) Accuracy 0.9766 (0.9594)
+[2020/04/13 00:48:26 __main__ INFO] - Epoch 106 Step 200/390 Loss 0.1243 (0.1338) Accuracy 0.9453 (0.9555)
+[2020/04/13 00:49:27 __main__ INFO] - Epoch 106 Step 300/390 Loss 0.1209 (0.1421) Accuracy 0.9531 (0.9525)
+[2020/04/13 00:50:21 __main__ INFO] - Elapsed 236.90
+[2020/04/13 00:50:21 __main__ INFO] - Test 106
+[2020/04/13 00:50:36 __main__ INFO] - Epoch 106 Loss 0.3628 Accuracy 0.8881
+[2020/04/13 00:50:36 __main__ INFO] - Elapsed 14.94
+[2020/04/13 00:50:37 __main__ INFO] - Train 107
+[2020/04/13 00:50:38 __main__ INFO] - Epoch 107 Step 0/390 Loss 0.0873 (0.0873) Accuracy 0.9766 (0.9766)
+[2020/04/13 00:51:38 __main__ INFO] - Epoch 107 Step 100/390 Loss 0.1015 (0.1241) Accuracy 0.9688 (0.9586)
+[2020/04/13 00:52:39 __main__ INFO] - Epoch 107 Step 200/390 Loss 0.1680 (0.1324) Accuracy 0.9531 (0.9544)
+[2020/04/13 00:53:40 __main__ INFO] - Epoch 107 Step 300/390 Loss 0.0837 (0.1448) Accuracy 0.9844 (0.9500)
+[2020/04/13 00:54:34 __main__ INFO] - Elapsed 236.97
+[2020/04/13 00:54:34 __main__ INFO] - Test 107
+[2020/04/13 00:54:48 __main__ INFO] - Epoch 107 Loss 0.4269 Accuracy 0.8755
+[2020/04/13 00:54:48 __main__ INFO] - Elapsed 14.85
+[2020/04/13 00:54:49 __main__ INFO] - Train 108
+[2020/04/13 00:54:50 __main__ INFO] - Epoch 108 Step 0/390 Loss 0.1394 (0.1394) Accuracy 0.9297 (0.9297)
+[2020/04/13 00:55:51 __main__ INFO] - Epoch 108 Step 100/390 Loss 0.1408 (0.1417) Accuracy 0.9609 (0.9530)
+[2020/04/13 00:56:52 __main__ INFO] - Epoch 108 Step 200/390 Loss 0.1101 (0.1441) Accuracy 0.9609 (0.9517)
+[2020/04/13 00:57:52 __main__ INFO] - Epoch 108 Step 300/390 Loss 0.1544 (0.1488) Accuracy 0.9609 (0.9494)
+[2020/04/13 00:58:46 __main__ INFO] - Elapsed 237.02
+[2020/04/13 00:58:46 __main__ INFO] - Test 108
+[2020/04/13 00:59:01 __main__ INFO] - Epoch 108 Loss 0.2848 Accuracy 0.9047
+[2020/04/13 00:59:01 __main__ INFO] - Elapsed 14.99
+[2020/04/13 00:59:03 __main__ INFO] - Train 109
+[2020/04/13 00:59:04 __main__ INFO] - Epoch 109 Step 0/390 Loss 0.1870 (0.1870) Accuracy 0.9375 (0.9375)
+[2020/04/13 01:00:04 __main__ INFO] - Epoch 109 Step 100/390 Loss 0.1706 (0.1246) Accuracy 0.9453 (0.9586)
+[2020/04/13 01:01:05 __main__ INFO] - Epoch 109 Step 200/390 Loss 0.0945 (0.1336) Accuracy 0.9688 (0.9542)
+[2020/04/13 01:02:06 __main__ INFO] - Epoch 109 Step 300/390 Loss 0.1398 (0.1394) Accuracy 0.9609 (0.9521)
+[2020/04/13 01:03:00 __main__ INFO] - Elapsed 236.89
+[2020/04/13 01:03:00 __main__ INFO] - Test 109
+[2020/04/13 01:03:15 __main__ INFO] - Epoch 109 Loss 0.3704 Accuracy 0.8860
+[2020/04/13 01:03:15 __main__ INFO] - Elapsed 14.82
+[2020/04/13 01:03:16 __main__ INFO] - Train 110
+[2020/04/13 01:03:17 __main__ INFO] - Epoch 110 Step 0/390 Loss 0.0766 (0.0766) Accuracy 0.9688 (0.9688)
+[2020/04/13 01:04:17 __main__ INFO] - Epoch 110 Step 100/390 Loss 0.2448 (0.1304) Accuracy 0.9375 (0.9571)
+[2020/04/13 01:05:18 __main__ INFO] - Epoch 110 Step 200/390 Loss 0.1144 (0.1417) Accuracy 0.9766 (0.9526)
+[2020/04/13 01:06:19 __main__ INFO] - Epoch 110 Step 300/390 Loss 0.1778 (0.1476) Accuracy 0.9375 (0.9500)
+[2020/04/13 01:07:13 __main__ INFO] - Elapsed 237.07
+[2020/04/13 01:07:13 __main__ INFO] - Test 110
+[2020/04/13 01:07:28 __main__ INFO] - Epoch 110 Loss 0.3869 Accuracy 0.8831
+[2020/04/13 01:07:28 __main__ INFO] - Elapsed 14.92
+[2020/04/13 01:07:29 __main__ INFO] - Train 111
+[2020/04/13 01:07:30 __main__ INFO] - Epoch 111 Step 0/390 Loss 0.1288 (0.1288) Accuracy 0.9531 (0.9531)
+[2020/04/13 01:08:30 __main__ INFO] - Epoch 111 Step 100/390 Loss 0.1134 (0.1367) Accuracy 0.9453 (0.9542)
+[2020/04/13 01:09:31 __main__ INFO] - Epoch 111 Step 200/390 Loss 0.1302 (0.1394) Accuracy 0.9766 (0.9526)
+[2020/04/13 01:10:32 __main__ INFO] - Epoch 111 Step 300/390 Loss 0.1704 (0.1437) Accuracy 0.9297 (0.9506)
+[2020/04/13 01:11:26 __main__ INFO] - Elapsed 236.88
+[2020/04/13 01:11:26 __main__ INFO] - Test 111
+[2020/04/13 01:11:40 __main__ INFO] - Epoch 111 Loss 0.3377 Accuracy 0.8926
+[2020/04/13 01:11:40 __main__ INFO] - Elapsed 14.84
+[2020/04/13 01:11:41 __main__ INFO] - Train 112
+[2020/04/13 01:11:42 __main__ INFO] - Epoch 112 Step 0/390 Loss 0.1600 (0.1600) Accuracy 0.9531 (0.9531)
+[2020/04/13 01:12:43 __main__ INFO] - Epoch 112 Step 100/390 Loss 0.1810 (0.1335) Accuracy 0.9375 (0.9544)
+[2020/04/13 01:13:44 __main__ INFO] - Epoch 112 Step 200/390 Loss 0.1469 (0.1345) Accuracy 0.9375 (0.9538)
+[2020/04/13 01:14:44 __main__ INFO] - Epoch 112 Step 300/390 Loss 0.1491 (0.1396) Accuracy 0.9453 (0.9520)
+[2020/04/13 01:15:38 __main__ INFO] - Elapsed 236.92
+[2020/04/13 01:15:38 __main__ INFO] - Test 112
+[2020/04/13 01:15:53 __main__ INFO] - Epoch 112 Loss 0.3337 Accuracy 0.8968
+[2020/04/13 01:15:53 __main__ INFO] - Elapsed 14.99
+[2020/04/13 01:15:55 __main__ INFO] - Train 113
+[2020/04/13 01:15:56 __main__ INFO] - Epoch 113 Step 0/390 Loss 0.1275 (0.1275) Accuracy 0.9688 (0.9688)
+[2020/04/13 01:16:56 __main__ INFO] - Epoch 113 Step 100/390 Loss 0.1657 (0.1203) Accuracy 0.9297 (0.9608)
+[2020/04/13 01:17:57 __main__ INFO] - Epoch 113 Step 200/390 Loss 0.1038 (0.1352) Accuracy 0.9688 (0.9550)
+[2020/04/13 01:18:58 __main__ INFO] - Epoch 113 Step 300/390 Loss 0.2091 (0.1442) Accuracy 0.9219 (0.9516)
+[2020/04/13 01:19:52 __main__ INFO] - Elapsed 236.90
+[2020/04/13 01:19:52 __main__ INFO] - Test 113
+[2020/04/13 01:20:06 __main__ INFO] - Epoch 113 Loss 0.3578 Accuracy 0.8882
+[2020/04/13 01:20:06 __main__ INFO] - Elapsed 14.84
+[2020/04/13 01:20:07 __main__ INFO] - Train 114
+[2020/04/13 01:20:08 __main__ INFO] - Epoch 114 Step 0/390 Loss 0.1135 (0.1135) Accuracy 0.9688 (0.9688)
+[2020/04/13 01:21:09 __main__ INFO] - Epoch 114 Step 100/390 Loss 0.0976 (0.1276) Accuracy 0.9766 (0.9577)
+[2020/04/13 01:22:10 __main__ INFO] - Epoch 114 Step 200/390 Loss 0.2054 (0.1356) Accuracy 0.9375 (0.9542)
+[2020/04/13 01:23:10 __main__ INFO] - Epoch 114 Step 300/390 Loss 0.1197 (0.1453) Accuracy 0.9609 (0.9509)
+[2020/04/13 01:24:04 __main__ INFO] - Elapsed 236.83
+[2020/04/13 01:24:04 __main__ INFO] - Test 114
+[2020/04/13 01:24:19 __main__ INFO] - Epoch 114 Loss 0.2748 Accuracy 0.9129
+[2020/04/13 01:24:19 __main__ INFO] - Elapsed 14.86
+[2020/04/13 01:24:20 __main__ INFO] - Train 115
+[2020/04/13 01:24:21 __main__ INFO] - Epoch 115 Step 0/390 Loss 0.1465 (0.1465) Accuracy 0.9531 (0.9531)
+[2020/04/13 01:25:22 __main__ INFO] - Epoch 115 Step 100/390 Loss 0.1470 (0.1253) Accuracy 0.9375 (0.9581)
+[2020/04/13 01:26:23 __main__ INFO] - Epoch 115 Step 200/390 Loss 0.1238 (0.1363) Accuracy 0.9609 (0.9536)
+[2020/04/13 01:27:23 __main__ INFO] - Epoch 115 Step 300/390 Loss 0.1630 (0.1408) Accuracy 0.9453 (0.9522)
+[2020/04/13 01:28:17 __main__ INFO] - Elapsed 237.09
+[2020/04/13 01:28:17 __main__ INFO] - Test 115
+[2020/04/13 01:28:32 __main__ INFO] - Epoch 115 Loss 0.3965 Accuracy 0.8759
+[2020/04/13 01:28:32 __main__ INFO] - Elapsed 14.88
+[2020/04/13 01:28:33 __main__ INFO] - Train 116
+[2020/04/13 01:28:34 __main__ INFO] - Epoch 116 Step 0/390 Loss 0.1504 (0.1504) Accuracy 0.9531 (0.9531)
+[2020/04/13 01:29:35 __main__ INFO] - Epoch 116 Step 100/390 Loss 0.1331 (0.1254) Accuracy 0.9531 (0.9584)
+[2020/04/13 01:30:35 __main__ INFO] - Epoch 116 Step 200/390 Loss 0.1443 (0.1311) Accuracy 0.9453 (0.9550)
+[2020/04/13 01:31:36 __main__ INFO] - Epoch 116 Step 300/390 Loss 0.1629 (0.1378) Accuracy 0.9375 (0.9530)
+[2020/04/13 01:32:30 __main__ INFO] - Elapsed 236.98
+[2020/04/13 01:32:30 __main__ INFO] - Test 116
+[2020/04/13 01:32:45 __main__ INFO] - Epoch 116 Loss 0.4133 Accuracy 0.8751
+[2020/04/13 01:32:45 __main__ INFO] - Elapsed 14.91
+[2020/04/13 01:32:46 __main__ INFO] - Train 117
+[2020/04/13 01:32:47 __main__ INFO] - Epoch 117 Step 0/390 Loss 0.1691 (0.1691) Accuracy 0.9609 (0.9609)
+[2020/04/13 01:33:48 __main__ INFO] - Epoch 117 Step 100/390 Loss 0.1089 (0.1360) Accuracy 0.9609 (0.9529)
+[2020/04/13 01:34:48 __main__ INFO] - Epoch 117 Step 200/390 Loss 0.2101 (0.1330) Accuracy 0.9297 (0.9531)
+[2020/04/13 01:35:49 __main__ INFO] - Epoch 117 Step 300/390 Loss 0.1426 (0.1374) Accuracy 0.9453 (0.9521)
+[2020/04/13 01:36:43 __main__ INFO] - Elapsed 236.89
+[2020/04/13 01:36:43 __main__ INFO] - Test 117
+[2020/04/13 01:36:58 __main__ INFO] - Epoch 117 Loss 0.3117 Accuracy 0.9032
+[2020/04/13 01:36:58 __main__ INFO] - Elapsed 15.01
+[2020/04/13 01:36:59 __main__ INFO] - Train 118
+[2020/04/13 01:37:00 __main__ INFO] - Epoch 118 Step 0/390 Loss 0.1175 (0.1175) Accuracy 0.9609 (0.9609)
+[2020/04/13 01:38:00 __main__ INFO] - Epoch 118 Step 100/390 Loss 0.0792 (0.1264) Accuracy 0.9766 (0.9575)
+[2020/04/13 01:39:01 __main__ INFO] - Epoch 118 Step 200/390 Loss 0.0919 (0.1421) Accuracy 0.9688 (0.9516)
+[2020/04/13 01:40:02 __main__ INFO] - Epoch 118 Step 300/390 Loss 0.1713 (0.1472) Accuracy 0.9219 (0.9491)
+[2020/04/13 01:40:56 __main__ INFO] - Elapsed 236.80
+[2020/04/13 01:40:56 __main__ INFO] - Test 118
+[2020/04/13 01:41:11 __main__ INFO] - Epoch 118 Loss 0.4271 Accuracy 0.8681
+[2020/04/13 01:41:11 __main__ INFO] - Elapsed 14.83
+[2020/04/13 01:41:12 __main__ INFO] - Train 119
+[2020/04/13 01:41:12 __main__ INFO] - Epoch 119 Step 0/390 Loss 0.1421 (0.1421) Accuracy 0.9531 (0.9531)
+[2020/04/13 01:42:13 __main__ INFO] - Epoch 119 Step 100/390 Loss 0.1585 (0.1238) Accuracy 0.9688 (0.9580)
+[2020/04/13 01:43:14 __main__ INFO] - Epoch 119 Step 200/390 Loss 0.3216 (0.1406) Accuracy 0.8984 (0.9527)
+[2020/04/13 01:44:14 __main__ INFO] - Epoch 119 Step 300/390 Loss 0.0982 (0.1425) Accuracy 0.9766 (0.9519)
+[2020/04/13 01:45:08 __main__ INFO] - Elapsed 236.80
+[2020/04/13 01:45:08 __main__ INFO] - Test 119
+[2020/04/13 01:45:23 __main__ INFO] - Epoch 119 Loss 0.3160 Accuracy 0.8986
+[2020/04/13 01:45:23 __main__ INFO] - Elapsed 14.85
+[2020/04/13 01:45:24 __main__ INFO] - Train 120
+[2020/04/13 01:45:25 __main__ INFO] - Epoch 120 Step 0/390 Loss 0.1588 (0.1588) Accuracy 0.9609 (0.9609)
+[2020/04/13 01:46:26 __main__ INFO] - Epoch 120 Step 100/390 Loss 0.1772 (0.1317) Accuracy 0.9609 (0.9558)
+[2020/04/13 01:47:27 __main__ INFO] - Epoch 120 Step 200/390 Loss 0.1354 (0.1392) Accuracy 0.9453 (0.9522)
+[2020/04/13 01:48:27 __main__ INFO] - Epoch 120 Step 300/390 Loss 0.1460 (0.1386) Accuracy 0.9531 (0.9519)
+[2020/04/13 01:49:21 __main__ INFO] - Elapsed 236.98
+[2020/04/13 01:49:21 __main__ INFO] - Test 120
+[2020/04/13 01:49:36 __main__ INFO] - Epoch 120 Loss 0.3227 Accuracy 0.8948
+[2020/04/13 01:49:36 __main__ INFO] - Elapsed 14.88
+[2020/04/13 01:49:37 __main__ INFO] - Train 121
+[2020/04/13 01:49:38 __main__ INFO] - Epoch 121 Step 0/390 Loss 0.0988 (0.0988) Accuracy 0.9766 (0.9766)
+[2020/04/13 01:50:39 __main__ INFO] - Epoch 121 Step 100/390 Loss 0.1179 (0.1282) Accuracy 0.9531 (0.9560)
+[2020/04/13 01:51:39 __main__ INFO] - Epoch 121 Step 200/390 Loss 0.1728 (0.1422) Accuracy 0.9375 (0.9509)
+[2020/04/13 01:52:40 __main__ INFO] - Epoch 121 Step 300/390 Loss 0.1312 (0.1467) Accuracy 0.9609 (0.9488)
+[2020/04/13 01:53:34 __main__ INFO] - Elapsed 236.86
+[2020/04/13 01:53:34 __main__ INFO] - Test 121
+[2020/04/13 01:53:49 __main__ INFO] - Epoch 121 Loss 0.2941 Accuracy 0.9032
+[2020/04/13 01:53:49 __main__ INFO] - Elapsed 14.83
+[2020/04/13 01:53:50 __main__ INFO] - Train 122
+[2020/04/13 01:53:51 __main__ INFO] - Epoch 122 Step 0/390 Loss 0.1530 (0.1530) Accuracy 0.9453 (0.9453)
+[2020/04/13 01:54:51 __main__ INFO] - Epoch 122 Step 100/390 Loss 0.1045 (0.1161) Accuracy 0.9609 (0.9619)
+[2020/04/13 01:55:52 __main__ INFO] - Epoch 122 Step 200/390 Loss 0.1428 (0.1282) Accuracy 0.9453 (0.9569)
+[2020/04/13 01:56:53 __main__ INFO] - Epoch 122 Step 300/390 Loss 0.1607 (0.1389) Accuracy 0.9531 (0.9526)
+[2020/04/13 01:57:47 __main__ INFO] - Elapsed 236.85
+[2020/04/13 01:57:47 __main__ INFO] - Test 122
+[2020/04/13 01:58:01 __main__ INFO] - Epoch 122 Loss 0.3534 Accuracy 0.8869
+[2020/04/13 01:58:01 __main__ INFO] - Elapsed 14.83
+[2020/04/13 01:58:02 __main__ INFO] - Train 123
+[2020/04/13 01:58:04 __main__ INFO] - Epoch 123 Step 0/390 Loss 0.2279 (0.2279) Accuracy 0.9219 (0.9219)
+[2020/04/13 01:59:04 __main__ INFO] - Epoch 123 Step 100/390 Loss 0.1609 (0.1323) Accuracy 0.9453 (0.9551)
+[2020/04/13 02:00:05 __main__ INFO] - Epoch 123 Step 200/390 Loss 0.1096 (0.1333) Accuracy 0.9453 (0.9537)
+[2020/04/13 02:01:05 __main__ INFO] - Epoch 123 Step 300/390 Loss 0.1156 (0.1334) Accuracy 0.9609 (0.9541)
+[2020/04/13 02:01:59 __main__ INFO] - Elapsed 236.95
+[2020/04/13 02:01:59 __main__ INFO] - Test 123
+[2020/04/13 02:02:14 __main__ INFO] - Epoch 123 Loss 0.3495 Accuracy 0.8867
+[2020/04/13 02:02:14 __main__ INFO] - Elapsed 14.98
+[2020/04/13 02:02:15 __main__ INFO] - Train 124
+[2020/04/13 02:02:16 __main__ INFO] - Epoch 124 Step 0/390 Loss 0.1972 (0.1972) Accuracy 0.9453 (0.9453)
+[2020/04/13 02:03:17 __main__ INFO] - Epoch 124 Step 100/390 Loss 0.1159 (0.1211) Accuracy 0.9531 (0.9582)
+[2020/04/13 02:04:18 __main__ INFO] - Epoch 124 Step 200/390 Loss 0.1667 (0.1397) Accuracy 0.9219 (0.9513)
+[2020/04/13 02:05:18 __main__ INFO] - Epoch 124 Step 300/390 Loss 0.1414 (0.1479) Accuracy 0.9531 (0.9486)
+[2020/04/13 02:06:12 __main__ INFO] - Elapsed 236.83
+[2020/04/13 02:06:12 __main__ INFO] - Test 124
+[2020/04/13 02:06:27 __main__ INFO] - Epoch 124 Loss 0.4141 Accuracy 0.8713
+[2020/04/13 02:06:27 __main__ INFO] - Elapsed 14.96
+[2020/04/13 02:06:28 __main__ INFO] - Train 125
+[2020/04/13 02:06:29 __main__ INFO] - Epoch 125 Step 0/390 Loss 0.1670 (0.1670) Accuracy 0.9297 (0.9297)
+[2020/04/13 02:07:30 __main__ INFO] - Epoch 125 Step 100/390 Loss 0.1436 (0.1370) Accuracy 0.9609 (0.9531)
+[2020/04/13 02:08:30 __main__ INFO] - Epoch 125 Step 200/390 Loss 0.1407 (0.1318) Accuracy 0.9609 (0.9556)
+[2020/04/13 02:09:31 __main__ INFO] - Epoch 125 Step 300/390 Loss 0.2265 (0.1326) Accuracy 0.9297 (0.9553)
+[2020/04/13 02:10:25 __main__ INFO] - Elapsed 236.88
+[2020/04/13 02:10:25 __main__ INFO] - Test 125
+[2020/04/13 02:10:40 __main__ INFO] - Epoch 125 Loss 0.3590 Accuracy 0.8858
+[2020/04/13 02:10:40 __main__ INFO] - Elapsed 14.89
+[2020/04/13 02:10:41 __main__ INFO] - Train 126
+[2020/04/13 02:10:42 __main__ INFO] - Epoch 126 Step 0/390 Loss 0.1839 (0.1839) Accuracy 0.9375 (0.9375)
+[2020/04/13 02:11:43 __main__ INFO] - Epoch 126 Step 100/390 Loss 0.1692 (0.1241) Accuracy 0.9297 (0.9576)
+[2020/04/13 02:12:43 __main__ INFO] - Epoch 126 Step 200/390 Loss 0.2275 (0.1329) Accuracy 0.9375 (0.9538)
+[2020/04/13 02:13:44 __main__ INFO] - Epoch 126 Step 300/390 Loss 0.2635 (0.1358) Accuracy 0.9531 (0.9535)
+[2020/04/13 02:14:38 __main__ INFO] - Elapsed 236.99
+[2020/04/13 02:14:38 __main__ INFO] - Test 126
+[2020/04/13 02:14:53 __main__ INFO] - Epoch 126 Loss 0.4605 Accuracy 0.8565
+[2020/04/13 02:14:53 __main__ INFO] - Elapsed 14.93
+[2020/04/13 02:14:54 __main__ INFO] - Train 127
+[2020/04/13 02:14:55 __main__ INFO] - Epoch 127 Step 0/390 Loss 0.1354 (0.1354) Accuracy 0.9453 (0.9453)
+[2020/04/13 02:15:56 __main__ INFO] - Epoch 127 Step 100/390 Loss 0.1253 (0.1264) Accuracy 0.9609 (0.9596)
+[2020/04/13 02:16:56 __main__ INFO] - Epoch 127 Step 200/390 Loss 0.1927 (0.1271) Accuracy 0.9297 (0.9583)
+[2020/04/13 02:17:57 __main__ INFO] - Epoch 127 Step 300/390 Loss 0.1135 (0.1353) Accuracy 0.9453 (0.9547)
+[2020/04/13 02:18:51 __main__ INFO] - Elapsed 236.87
+[2020/04/13 02:18:51 __main__ INFO] - Test 127
+[2020/04/13 02:19:06 __main__ INFO] - Epoch 127 Loss 0.4645 Accuracy 0.8643
+[2020/04/13 02:19:06 __main__ INFO] - Elapsed 14.91
+[2020/04/13 02:19:07 __main__ INFO] - Train 128
+[2020/04/13 02:19:08 __main__ INFO] - Epoch 128 Step 0/390 Loss 0.1232 (0.1232) Accuracy 0.9531 (0.9531)
+[2020/04/13 02:20:08 __main__ INFO] - Epoch 128 Step 100/390 Loss 0.1884 (0.1318) Accuracy 0.9375 (0.9562)
+[2020/04/13 02:21:09 __main__ INFO] - Epoch 128 Step 200/390 Loss 0.1056 (0.1374) Accuracy 0.9531 (0.9538)
+[2020/04/13 02:22:10 __main__ INFO] - Epoch 128 Step 300/390 Loss 0.1178 (0.1388) Accuracy 0.9688 (0.9532)
+[2020/04/13 02:23:04 __main__ INFO] - Elapsed 236.92
+[2020/04/13 02:23:04 __main__ INFO] - Test 128
+[2020/04/13 02:23:18 __main__ INFO] - Epoch 128 Loss 0.3943 Accuracy 0.8800
+[2020/04/13 02:23:18 __main__ INFO] - Elapsed 14.84
+[2020/04/13 02:23:19 __main__ INFO] - Train 129
+[2020/04/13 02:23:20 __main__ INFO] - Epoch 129 Step 0/390 Loss 0.1281 (0.1281) Accuracy 0.9766 (0.9766)
+[2020/04/13 02:24:21 __main__ INFO] - Epoch 129 Step 100/390 Loss 0.1392 (0.1415) Accuracy 0.9375 (0.9515)
+[2020/04/13 02:25:22 __main__ INFO] - Epoch 129 Step 200/390 Loss 0.1057 (0.1289) Accuracy 0.9766 (0.9565)
+[2020/04/13 02:26:22 __main__ INFO] - Epoch 129 Step 300/390 Loss 0.2085 (0.1381) Accuracy 0.9219 (0.9536)
+[2020/04/13 02:27:16 __main__ INFO] - Elapsed 236.91
+[2020/04/13 02:27:16 __main__ INFO] - Test 129
+[2020/04/13 02:27:31 __main__ INFO] - Epoch 129 Loss 0.2765 Accuracy 0.9088
+[2020/04/13 02:27:31 __main__ INFO] - Elapsed 14.89
+[2020/04/13 02:27:32 __main__ INFO] - Train 130
+[2020/04/13 02:27:33 __main__ INFO] - Epoch 130 Step 0/390 Loss 0.1212 (0.1212) Accuracy 0.9531 (0.9531)
+[2020/04/13 02:28:34 __main__ INFO] - Epoch 130 Step 100/390 Loss 0.1317 (0.1171) Accuracy 0.9688 (0.9603)
+[2020/04/13 02:29:35 __main__ INFO] - Epoch 130 Step 200/390 Loss 0.1961 (0.1320) Accuracy 0.9375 (0.9539)
+[2020/04/13 02:30:35 __main__ INFO] - Epoch 130 Step 300/390 Loss 0.1681 (0.1390) Accuracy 0.9219 (0.9525)
+[2020/04/13 02:31:29 __main__ INFO] - Elapsed 236.91
+[2020/04/13 02:31:29 __main__ INFO] - Test 130
+[2020/04/13 02:31:44 __main__ INFO] - Epoch 130 Loss 0.3760 Accuracy 0.8872
+[2020/04/13 02:31:44 __main__ INFO] - Elapsed 14.92
+[2020/04/13 02:31:45 __main__ INFO] - Train 131
+[2020/04/13 02:31:46 __main__ INFO] - Epoch 131 Step 0/390 Loss 0.1452 (0.1452) Accuracy 0.9453 (0.9453)
+[2020/04/13 02:32:47 __main__ INFO] - Epoch 131 Step 100/390 Loss 0.2004 (0.1221) Accuracy 0.9297 (0.9588)
+[2020/04/13 02:33:47 __main__ INFO] - Epoch 131 Step 200/390 Loss 0.1646 (0.1265) Accuracy 0.9453 (0.9568)
+[2020/04/13 02:34:48 __main__ INFO] - Epoch 131 Step 300/390 Loss 0.1691 (0.1327) Accuracy 0.9453 (0.9551)
+[2020/04/13 02:35:42 __main__ INFO] - Elapsed 236.80
+[2020/04/13 02:35:42 __main__ INFO] - Test 131
+[2020/04/13 02:35:57 __main__ INFO] - Epoch 131 Loss 0.3632 Accuracy 0.8878
+[2020/04/13 02:35:57 __main__ INFO] - Elapsed 14.88
+[2020/04/13 02:35:58 __main__ INFO] - Train 132
+[2020/04/13 02:35:59 __main__ INFO] - Epoch 132 Step 0/390 Loss 0.1727 (0.1727) Accuracy 0.9297 (0.9297)
+[2020/04/13 02:36:59 __main__ INFO] - Epoch 132 Step 100/390 Loss 0.1967 (0.1274) Accuracy 0.9375 (0.9569)
+[2020/04/13 02:38:00 __main__ INFO] - Epoch 132 Step 200/390 Loss 0.1811 (0.1360) Accuracy 0.9453 (0.9537)
+[2020/04/13 02:39:01 __main__ INFO] - Epoch 132 Step 300/390 Loss 0.1660 (0.1401) Accuracy 0.9609 (0.9519)
+[2020/04/13 02:39:55 __main__ INFO] - Elapsed 236.93
+[2020/04/13 02:39:55 __main__ INFO] - Test 132
+[2020/04/13 02:40:10 __main__ INFO] - Epoch 132 Loss 0.3055 Accuracy 0.9019
+[2020/04/13 02:40:10 __main__ INFO] - Elapsed 14.83
+[2020/04/13 02:40:11 __main__ INFO] - Train 133
+[2020/04/13 02:40:12 __main__ INFO] - Epoch 133 Step 0/390 Loss 0.1092 (0.1092) Accuracy 0.9531 (0.9531)
+[2020/04/13 02:41:12 __main__ INFO] - Epoch 133 Step 100/390 Loss 0.2026 (0.1335) Accuracy 0.9141 (0.9545)
+[2020/04/13 02:42:13 __main__ INFO] - Epoch 133 Step 200/390 Loss 0.0979 (0.1321) Accuracy 0.9766 (0.9558)
+[2020/04/13 02:43:14 __main__ INFO] - Epoch 133 Step 300/390 Loss 0.0882 (0.1385) Accuracy 0.9844 (0.9537)
+[2020/04/13 02:44:08 __main__ INFO] - Elapsed 237.05
+[2020/04/13 02:44:08 __main__ INFO] - Test 133
+[2020/04/13 02:44:23 __main__ INFO] - Epoch 133 Loss 0.3064 Accuracy 0.9003
+[2020/04/13 02:44:23 __main__ INFO] - Elapsed 14.92
+[2020/04/13 02:44:24 __main__ INFO] - Train 134
+[2020/04/13 02:44:24 __main__ INFO] - Epoch 134 Step 0/390 Loss 0.2648 (0.2648) Accuracy 0.9297 (0.9297)
+[2020/04/13 02:45:25 __main__ INFO] - Epoch 134 Step 100/390 Loss 0.1694 (0.1270) Accuracy 0.9453 (0.9576)
+[2020/04/13 02:46:26 __main__ INFO] - Epoch 134 Step 200/390 Loss 0.1036 (0.1272) Accuracy 0.9531 (0.9572)
+[2020/04/13 02:47:26 __main__ INFO] - Epoch 134 Step 300/390 Loss 0.1028 (0.1358) Accuracy 0.9453 (0.9545)
+[2020/04/13 02:48:20 __main__ INFO] - Elapsed 236.80
+[2020/04/13 02:48:20 __main__ INFO] - Test 134
+[2020/04/13 02:48:35 __main__ INFO] - Epoch 134 Loss 0.3656 Accuracy 0.8860
+[2020/04/13 02:48:35 __main__ INFO] - Elapsed 14.99
+[2020/04/13 02:48:36 __main__ INFO] - Train 135
+[2020/04/13 02:48:37 __main__ INFO] - Epoch 135 Step 0/390 Loss 0.1039 (0.1039) Accuracy 0.9688 (0.9688)
+[2020/04/13 02:49:38 __main__ INFO] - Epoch 135 Step 100/390 Loss 0.1031 (0.1149) Accuracy 0.9453 (0.9613)
+[2020/04/13 02:50:39 __main__ INFO] - Epoch 135 Step 200/390 Loss 0.0822 (0.1210) Accuracy 0.9609 (0.9597)
+[2020/04/13 02:51:39 __main__ INFO] - Epoch 135 Step 300/390 Loss 0.1964 (0.1304) Accuracy 0.9375 (0.9558)
+[2020/04/13 02:52:33 __main__ INFO] - Elapsed 237.07
+[2020/04/13 02:52:33 __main__ INFO] - Test 135
+[2020/04/13 02:52:48 __main__ INFO] - Epoch 135 Loss 0.3922 Accuracy 0.8815
+[2020/04/13 02:52:48 __main__ INFO] - Elapsed 14.83
+[2020/04/13 02:52:49 __main__ INFO] - Train 136
+[2020/04/13 02:52:50 __main__ INFO] - Epoch 136 Step 0/390 Loss 0.2150 (0.2150) Accuracy 0.9297 (0.9297)
+[2020/04/13 02:53:51 __main__ INFO] - Epoch 136 Step 100/390 Loss 0.0710 (0.1344) Accuracy 0.9922 (0.9549)
+[2020/04/13 02:54:52 __main__ INFO] - Epoch 136 Step 200/390 Loss 0.0980 (0.1317) Accuracy 0.9609 (0.9549)
+[2020/04/13 02:55:52 __main__ INFO] - Epoch 136 Step 300/390 Loss 0.1750 (0.1378) Accuracy 0.9375 (0.9532)
+[2020/04/13 02:56:46 __main__ INFO] - Elapsed 236.92
+[2020/04/13 02:56:46 __main__ INFO] - Test 136
+[2020/04/13 02:57:01 __main__ INFO] - Epoch 136 Loss 0.3703 Accuracy 0.8867
+[2020/04/13 02:57:01 __main__ INFO] - Elapsed 14.99
+[2020/04/13 02:57:02 __main__ INFO] - Train 137
+[2020/04/13 02:57:03 __main__ INFO] - Epoch 137 Step 0/390 Loss 0.0983 (0.0983) Accuracy 0.9766 (0.9766)
+[2020/04/13 02:58:04 __main__ INFO] - Epoch 137 Step 100/390 Loss 0.1131 (0.1241) Accuracy 0.9531 (0.9595)
+[2020/04/13 02:59:05 __main__ INFO] - Epoch 137 Step 200/390 Loss 0.0935 (0.1236) Accuracy 0.9766 (0.9590)
+[2020/04/13 03:00:05 __main__ INFO] - Epoch 137 Step 300/390 Loss 0.1324 (0.1336) Accuracy 0.9531 (0.9550)
+[2020/04/13 03:00:59 __main__ INFO] - Elapsed 237.09
+[2020/04/13 03:00:59 __main__ INFO] - Test 137
+[2020/04/13 03:01:14 __main__ INFO] - Epoch 137 Loss 0.2972 Accuracy 0.9035
+[2020/04/13 03:01:14 __main__ INFO] - Elapsed 14.93
+[2020/04/13 03:01:15 __main__ INFO] - Train 138
+[2020/04/13 03:01:16 __main__ INFO] - Epoch 138 Step 0/390 Loss 0.1268 (0.1268) Accuracy 0.9531 (0.9531)
+[2020/04/13 03:02:17 __main__ INFO] - Epoch 138 Step 100/390 Loss 0.0689 (0.1257) Accuracy 0.9688 (0.9578)
+[2020/04/13 03:03:18 __main__ INFO] - Epoch 138 Step 200/390 Loss 0.1329 (0.1234) Accuracy 0.9531 (0.9595)
+[2020/04/13 03:04:18 __main__ INFO] - Epoch 138 Step 300/390 Loss 0.1426 (0.1322) Accuracy 0.9453 (0.9551)
+[2020/04/13 03:05:12 __main__ INFO] - Elapsed 237.04
+[2020/04/13 03:05:12 __main__ INFO] - Test 138
+[2020/04/13 03:05:27 __main__ INFO] - Epoch 138 Loss 0.4317 Accuracy 0.8655
+[2020/04/13 03:05:27 __main__ INFO] - Elapsed 14.96
+[2020/04/13 03:05:28 __main__ INFO] - Train 139
+[2020/04/13 03:05:29 __main__ INFO] - Epoch 139 Step 0/390 Loss 0.1123 (0.1123) Accuracy 0.9531 (0.9531)
+[2020/04/13 03:06:30 __main__ INFO] - Epoch 139 Step 100/390 Loss 0.1740 (0.1222) Accuracy 0.9219 (0.9579)
+[2020/04/13 03:07:31 __main__ INFO] - Epoch 139 Step 200/390 Loss 0.1270 (0.1309) Accuracy 0.9609 (0.9550)
+[2020/04/13 03:08:31 __main__ INFO] - Epoch 139 Step 300/390 Loss 0.1529 (0.1395) Accuracy 0.9453 (0.9524)
+[2020/04/13 03:09:25 __main__ INFO] - Elapsed 237.03
+[2020/04/13 03:09:25 __main__ INFO] - Test 139
+[2020/04/13 03:09:40 __main__ INFO] - Epoch 139 Loss 0.2865 Accuracy 0.9079
+[2020/04/13 03:09:40 __main__ INFO] - Elapsed 15.00
+[2020/04/13 03:09:41 __main__ INFO] - Train 140
+[2020/04/13 03:09:42 __main__ INFO] - Epoch 140 Step 0/390 Loss 0.1741 (0.1741) Accuracy 0.9375 (0.9375)
+[2020/04/13 03:10:43 __main__ INFO] - Epoch 140 Step 100/390 Loss 0.1438 (0.1207) Accuracy 0.9453 (0.9580)
+[2020/04/13 03:11:44 __main__ INFO] - Epoch 140 Step 200/390 Loss 0.1333 (0.1268) Accuracy 0.9531 (0.9569)
+[2020/04/13 03:12:44 __main__ INFO] - Epoch 140 Step 300/390 Loss 0.1267 (0.1351) Accuracy 0.9609 (0.9529)
+[2020/04/13 03:13:38 __main__ INFO] - Elapsed 236.87
+[2020/04/13 03:13:38 __main__ INFO] - Test 140
+[2020/04/13 03:13:53 __main__ INFO] - Epoch 140 Loss 0.3350 Accuracy 0.8945
+[2020/04/13 03:13:53 __main__ INFO] - Elapsed 14.96
+[2020/04/13 03:13:54 __main__ INFO] - Train 141
+[2020/04/13 03:13:55 __main__ INFO] - Epoch 141 Step 0/390 Loss 0.1245 (0.1245) Accuracy 0.9531 (0.9531)
+[2020/04/13 03:14:56 __main__ INFO] - Epoch 141 Step 100/390 Loss 0.0809 (0.1267) Accuracy 0.9766 (0.9568)
+[2020/04/13 03:15:57 __main__ INFO] - Epoch 141 Step 200/390 Loss 0.1729 (0.1283) Accuracy 0.9844 (0.9566)
+[2020/04/13 03:16:57 __main__ INFO] - Epoch 141 Step 300/390 Loss 0.1011 (0.1345) Accuracy 0.9609 (0.9543)
+
